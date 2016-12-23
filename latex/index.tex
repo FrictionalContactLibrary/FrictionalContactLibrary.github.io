@@ -3,7 +3,8 @@ F\+C\+L\+I\+B is
 \begin{DoxyItemize}
 \item A open source collection of Frictional Contact (F\+C) problems stored in a specific \href{http://www.hdfgroup.org/HDF5/}{\tt H\+D\+F5 format } 
 \item A open source light implementation of Input/\+Output functions in C Language to read and write problems  
-\end{DoxyItemize}\hypertarget{index_goals}{}\subsection{Goals of the project}\label{index_goals}
+\end{DoxyItemize}~\newline
+\hypertarget{index_goals}{}\subsection{Goals of the project}\label{index_goals}
 The goal of this work is to set up a collection of 2\+D and 3\+D Frictional Contact (F\+C) problems in order to
 
 
@@ -11,8 +12,35 @@ The goal of this work is to set up a collection of 2\+D and 3\+D Frictional Cont
 \item set up a list of benchmarks  
 \item provide a standard framework for testing available and new algorithms for solving discrete frictional contact problems  
 \item share common formulations of problems in order to exchange data 
-\end{DoxyItemize}\hypertarget{index_howtodownload}{}\subsection{How to download  ?}\label{index_howtodownload}
-see \hyperlink{download}{Download} section\hypertarget{index_Wahtis}{}\subsection{What is a Frictional contact problem ?}\label{index_Wahtis}
+\end{DoxyItemize}~\newline
+\hypertarget{index_References}{}\subsection{References}\label{index_References}
+\href{https://hal.inria.fr/hal-00945820v2/document}{\tt Vincent Acary, Maurice Br\'{e}mond, Tomasz Koziara, Franck P\'{e}rignon. F\+C\+L\+I\+B\+: a collection of discrete 3\+D Frictional Contact problems. \mbox{[}Technical Report\mbox{]} R\+T-\/0444, I\+N\+R\+I\+A. 2014, pp.\+34.} ~\newline
+
+
+~\newline
+ \hypertarget{index_howtodownload}{}\subsection{How to download  ?}\label{index_howtodownload}
+How to download sources files of the A\+P\+I? 
+\begin{DoxyItemize}
+\item latest version on \href{https://github.com/FrictionalContactLibrary/fclib}{\tt github Frictional\+Contact\+Library/fclib} 
+\item \href{https://github.com/FrictionalContactLibrary/fclib/releases}{\tt releases } 
+\end{DoxyItemize}
+
+~\newline
+
+
+How to download the collection of problems ? 
+\begin{DoxyItemize}
+\item The directory fclib/data/fclib-\/library contains the list of problem files of the library of tests in the file ls-\/\+Rl.\+txt 
+
+
+\item The problem files are not stored in the github repository but there\+:  
+\begin{DoxyItemize}
+\item \href{http://faf.gforge.inria.fr/fclib-library/}{\tt Current versions of problems are there }  
+\item \href{http://fclib.gforge.inria.fr/resources/}{\tt Old tagged versions are there } 
+\end{DoxyItemize}
+\item \hyperlink{problems_0_2}{F\+Clib collection v0.\+2}  
+\end{DoxyItemize}see \hyperlink{download}{Download} section for other details ~\newline
+\hypertarget{index_Wahtis}{}\subsection{What is a Frictional contact problem ?}\label{index_Wahtis}
 A Frictional contact problem is algebraic problem obtained after possible time and space discretizations of problems of mechanics of solid involving contact and Coulomb\textquotesingle{}s friction. The mathematical structure of the problem is a second-\/order cone complementarity problem. For more details, you could have a look to the \href{doc/FCLib.pdf}{\tt fclib specifications }\hypertarget{index_Localfclib}{}\subsubsection{The local Frictional Contact problem with equality constraints}\label{index_Localfclib}
 Given 
 \begin{DoxyItemize}
@@ -22,18 +50,18 @@ Given
 \item a vector $q \in {\mathrm{I\!R}}^{m}$, 
 \item a vector $s \in {\mathrm{I\!R}}^{p}$, 
 \item a vector of coefficients of friction $\mu \in {\mathrm{I\!R}}^{n_c}$ 
-\end{DoxyItemize}the Mixed 3\+D\+F\+C problem is to find three vectors $u\in{\mathrm{I\!R}}^m$, $r\in {\mathrm{I\!R}}^m$ and $\lambda \in {\mathrm{I\!R}}^p$ denoted by $\mathrm{M3DFC}(R,V,W,q,s,\mu)$ such that \begin{eqnarray*}\label{eq:lcp1} \begin{cases} V^T {r} + R \lambda + s = 0 \\ \\ \hat u = W {r} + V\lambda + q +\left[ \left[\begin{array}{c} \mu^\alpha \|u^\alpha_T\|\\ 0 \\ 0 \end{array}\right]^T, \alpha = 1 \ldots n_c \right]^T \\ \\ C^\star_{\mu} \ni {\hat u} \perp r \in C_{\mu} \end{cases} \end{eqnarray*} where the Coulomb friction cone for a contact $\alpha$ is defined by \begin{eqnarray*} \label{eq:CCC} C_{\mu^\alpha}^{\alpha} = \{r^\alpha, \|r^\alpha_T \| \leq \mu^\alpha |r^\alpha_N| \} \end{eqnarray*} and the set $C^{\alpha,\star}_{\mu^\alpha}$ is its dual. \hypertarget{index_globalfclib}{}\subsubsection{The Global Frictional Contact problem with equality constraints}\label{index_globalfclib}
+\end{DoxyItemize}the Mixed 3\+D\+F\+C problem is to find three vectors $u\in{\mathrm{I\!R}}^m$, $r\in {\mathrm{I\!R}}^m$ and $\lambda \in {\mathrm{I\!R}}^p$ denoted by $\mathrm{M3DFC}(R,V,W,q,s,\mu)$ such that \begin{eqnarray*}\label{eq:lcp1} \begin{cases} V^T {r} + R \lambda + s = 0 \\ \\ \hat u = W {r} + V\lambda + q +\left[ \left[\begin{array}{c} \mu^\alpha \|u^\alpha_T\|\\ 0 \\ 0 \end{array}\right]^T, \alpha = 1 \ldots n_c \right]^T \\ \\ K^\star_{\mu} \ni {\hat u} \perp r \in K_{\mu} \end{cases} \end{eqnarray*} where the Coulomb friction cone for a contact $\alpha$ is defined by \begin{eqnarray*} \label{eq:CCC} K _{\mu^\alpha}^{\alpha} = \{r^\alpha, \|r^\alpha_T \| \leq \mu^\alpha |r^\alpha_N| \} \end{eqnarray*} and the set $K^{\alpha,\star}_{\mu^\alpha}$ is its dual. \hypertarget{index_globalfclib}{}\subsubsection{The Global Frictional Contact problem with equality constraints}\label{index_globalfclib}
 We are also dealing with global F\+C problem defined by
 
 Given 
 \begin{DoxyItemize}
-\item a symmetric positive definite matrix ${M} \in {\mathrm{I\!R}}^{n \times n}$ 
+\item a positive definite matrix ${M} \in {\mathrm{I\!R}}^{n \times n}$ 
 \item a vector $ {f} \in {\mathrm{I\!R}}^n$, 
 \item a matrix ${H} \in {\mathrm{I\!R}}^{n \times m}$ 
 \item a matrix ${G} \in {\mathrm{I\!R}}^{n \times p}$ 
 \item a vector $w \in {\mathrm{I\!R}}^{m}$, 
 \item a vector $b \in {\mathrm{I\!R}}^{p}$, 
 \item a vector of coefficients of friction $\mu \in {\mathrm{I\!R}}^{n_c}$ 
-\end{DoxyItemize}the Global Mixed 3\+D\+F\+C problem is to find four vectors $ {v} \in {\mathrm{I\!R}}^n$, $u\in{\mathrm{I\!R}}^m$, $r\in {\mathrm{I\!R}}^m$ and $\lambda \in {\mathrm{I\!R}}^p$ denoted by $\mathrm{GM3DFC}(M,H,G,w,b,\mu)$ such that \begin{eqnarray*} \begin{cases} M v = {H} {r} + G\lambda + {f} \\ \\ G^T v +b =0 \\ \\ \hat u = H^T v + w +\left[ \left[\begin{array}{c} \mu \|u^\alpha_T\|\\ 0 \\ 0 \end{array}\right]^T, \alpha = 1 \ldots n_c \right]^T \\ \\ C^\star_{\mu} \ni {\hat u} \perp r \in C_{\mu} \end{cases} \end{eqnarray*} \hypertarget{index_without}{}\subsubsection{Problems without equality constraints}\label{index_without}
-If the original problems do not contain inequality constraints, or if they are reduced, the problems do no have the variables $\lambda$ as unknowns and can be simplified. However, the storage in H\+D\+F5 file remains the same.\hypertarget{index_Merict}{}\subsubsection{functions.}\label{index_Merict}
+\end{DoxyItemize}the Global Mixed 3\+D\+F\+C problem is to find four vectors $ {v} \in {\mathrm{I\!R}}^n$, $u\in{\mathrm{I\!R}}^m$, $r\in {\mathrm{I\!R}}^m$ and $\lambda \in {\mathrm{I\!R}}^p$ denoted by $\mathrm{GM3DFC}(M,H,G,w,b,\mu)$ such that \begin{eqnarray*} \begin{cases} M v = {H} {r} + G\lambda + {f} \\ \\ G^T v +b =0 \\ \\ \hat u = H^T v + w +\left[ \left[\begin{array}{c} \mu \|u^\alpha_T\|\\ 0 \\ 0 \end{array}\right]^T, \alpha = 1 \ldots n_c \right]^T \\ \\ K^\star_{\mu} \ni {\hat u} \perp r \in K_{\mu} \end{cases} \end{eqnarray*} \hypertarget{index_without}{}\subsubsection{Problems without equality constraints}\label{index_without}
+If the original problems do not contain inequality constraints, or if they are reduced, the problems do no have the variables $\lambda$ as unknowns and can be simplified. However, the storage in H\+D\+F5 file remains the same.\hypertarget{index_merit}{}\subsubsection{Merit functions.}\label{index_merit}
 The A\+P\+I provides also some Merit functions which measures if one set of vectors satisfies the previous problems. 

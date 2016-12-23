@@ -56,6 +56,8 @@ A open source collection of Frictional Contact (FC) problems stored in a specifi
 <li>
 A open source light implementation of Input/Output functions in C Language to read and write problems  </li>
 </ul>
+<p><br />
+</p>
 <h1><a class="anchor" id="goals"></a>
 Goals of the project</h1>
 <p>The goal of this work is to set up a collection of 2D and 3D Frictional Contact (FC) problems in order to</p>
@@ -67,9 +69,42 @@ provide a standard framework for testing available and new algorithms for solvin
 <li>
 share common formulations of problems in order to exchange data </li>
 </ul>
+<p><br />
+</p>
+<h1><a class="anchor" id="References"></a>
+References</h1>
+<p><a href="https://hal.inria.fr/hal-00945820v2/document">Vincent Acary, Maurice Br&eacute;mond, Tomasz Koziara, Franck P&eacute;rignon. FCLIB: a collection of discrete 3D Frictional Contact problems. [Technical Report] RT-0444, INRIA. 2014, pp.34.</a> <br />
+</p>
+<p><br />
+ </p>
 <h1><a class="anchor" id="howtodownload"></a>
 How to download  ?</h1>
-<p>see <a class="el" href="download.html">Download</a> section</p>
+<p>How to download sources files of the API? </p><ul>
+<li>
+latest version on <a href="https://github.com/FrictionalContactLibrary/fclib">github FrictionalContactLibrary/fclib</a> </li>
+<li>
+<a href="https://github.com/FrictionalContactLibrary/fclib/releases">releases </a> </li>
+</ul>
+<p><br />
+</p>
+<p>How to download the collection of problems ? </p><ul>
+<li>
+<p class="startli">The directory fclib/data/fclib-library contains the list of problem files of the library of tests in the file ls-Rl.txt </p>
+<p class="endli"></p>
+</li>
+<li>
+The problem files are not stored in the github repository but there:  <ul>
+<li>
+<a href="http://faf.gforge.inria.fr/fclib-library/">Current versions of problems are there </a>  </li>
+<li>
+<a href="http://fclib.gforge.inria.fr/resources/">Old tagged versions are there </a> </li>
+</ul>
+</li>
+<li>
+<a class="el" href="problems_0_2.html">FClib collection v0.2</a>  </li>
+</ul>
+<p>see <a class="el" href="download.html">Download</a> section for other details <br />
+</p>
 <h1><a class="anchor" id="Wahtis"></a>
 What is a Frictional contact problem ?</h1>
 <p>A Frictional contact problem is algebraic problem obtained after possible time and space discretizations of problems of mechanics of solid involving contact and Coulomb's friction. The mathematical structure of the problem is a second-order cone complementarity problem. For more details, you could have a look to the <a href="doc/FCLib.pdf">fclib specifications </a></p>
@@ -79,7 +114,7 @@ The local Frictional Contact problem with equality constraints</h2>
 <li>
 a positive semi&ndash;definite matrix \({W} \in {\mathrm{I\!R}}^{m \times m}\) </li>
 <li>
-a matrix $${V} \in {\mathrm{I\!R}}^{m \times p}$$ </li>
+a matrix \({V} \in {\mathrm{I\!R}}^{m \times p}\) </li>
 <li>
 a matrix \({R} \in {\mathrm{I\!R}}^{p \times p}\) </li>
 <li>
@@ -90,18 +125,18 @@ a vector \(s \in {\mathrm{I\!R}}^{p}\), </li>
 a vector of coefficients of friction \(\mu \in {\mathrm{I\!R}}^{n_c}\) </li>
 </ul>
 <p>the Mixed 3DFC problem is to find three vectors \(u\in{\mathrm{I\!R}}^m\), \(r\in {\mathrm{I\!R}}^m\) and \(\lambda \in {\mathrm{I\!R}}^p\) denoted by \(\mathrm{M3DFC}(R,V,W,q,s,\mu)\) such that </p><p class="formulaDsp">
-\begin{eqnarray*}\label{eq:lcp1} \begin{cases} V^T {r} + R \lambda + s = 0 \\ \\ \hat u = W {r} + V\lambda + q +\left[ \left[\begin{array}{c} \mu^\alpha \|u^\alpha_T\|\\ 0 \\ 0 \end{array}\right]^T, \alpha = 1 \ldots n_c \right]^T \\ \\ C^\star_{\mu} \ni {\hat u} \perp r \in C_{\mu} \end{cases} \end{eqnarray*}
+\begin{eqnarray*}\label{eq:lcp1} \begin{cases} V^T {r} + R \lambda + s = 0 \\ \\ \hat u = W {r} + V\lambda + q +\left[ \left[\begin{array}{c} \mu^\alpha \|u^\alpha_T\|\\ 0 \\ 0 \end{array}\right]^T, \alpha = 1 \ldots n_c \right]^T \\ \\ K^\star_{\mu} \ni {\hat u} \perp r \in K_{\mu} \end{cases} \end{eqnarray*}
 </p>
 <p> where the Coulomb friction cone for a contact \(\alpha\) is defined by </p><p class="formulaDsp">
-\begin{eqnarray*} \label{eq:CCC} C_{\mu^\alpha}^{\alpha} = \{r^\alpha, \|r^\alpha_T \| \leq \mu^\alpha |r^\alpha_N| \} \end{eqnarray*}
+\begin{eqnarray*} \label{eq:CCC} K _{\mu^\alpha}^{\alpha} = \{r^\alpha, \|r^\alpha_T \| \leq \mu^\alpha |r^\alpha_N| \} \end{eqnarray*}
 </p>
-<p> and the set \(C^{\alpha,\star}_{\mu^\alpha}\) is its dual. </p>
+<p> and the set \(K^{\alpha,\star}_{\mu^\alpha}\) is its dual. </p>
 <h2><a class="anchor" id="globalfclib"></a>
 The Global Frictional Contact problem with equality constraints</h2>
 <p>We are also dealing with global FC problem defined by</p>
 <p>Given </p><ul>
 <li>
-a symmetric positive definite matrix \({M} \in {\mathrm{I\!R}}^{n \times n}\) </li>
+a positive definite matrix \({M} \in {\mathrm{I\!R}}^{n \times n}\) </li>
 <li>
 a vector \( {f} \in {\mathrm{I\!R}}^n\), </li>
 <li>
@@ -116,13 +151,13 @@ a vector \(b \in {\mathrm{I\!R}}^{p}\), </li>
 a vector of coefficients of friction \(\mu \in {\mathrm{I\!R}}^{n_c}\) </li>
 </ul>
 <p>the Global Mixed 3DFC problem is to find four vectors \( {v} \in {\mathrm{I\!R}}^n\), \(u\in{\mathrm{I\!R}}^m\), \(r\in {\mathrm{I\!R}}^m\) and \(\lambda \in {\mathrm{I\!R}}^p\) denoted by \(\mathrm{GM3DFC}(M,H,G,w,b,\mu)\) such that </p><p class="formulaDsp">
-\begin{eqnarray*} \begin{cases} M v = {H} {r} + G\lambda + {f} \\ \\ G^T v +b =0 \\ \\ \hat u = H^T v + w +\left[ \left[\begin{array}{c} \mu \|u^\alpha_T\|\\ 0 \\ 0 \end{array}\right]^T, \alpha = 1 \ldots n_c \right]^T \\ \\ C^\star_{\mu} \ni {\hat u} \perp r \in C_{\mu} \end{cases} \end{eqnarray*}
+\begin{eqnarray*} \begin{cases} M v = {H} {r} + G\lambda + {f} \\ \\ G^T v +b =0 \\ \\ \hat u = H^T v + w +\left[ \left[\begin{array}{c} \mu \|u^\alpha_T\|\\ 0 \\ 0 \end{array}\right]^T, \alpha = 1 \ldots n_c \right]^T \\ \\ K^\star_{\mu} \ni {\hat u} \perp r \in K_{\mu} \end{cases} \end{eqnarray*}
 </p>
  <h2><a class="anchor" id="without"></a>
 Problems without equality constraints</h2>
 <p>If the original problems do not contain inequality constraints, or if they are reduced, the problems do no have the variables \(\lambda\) as unknowns and can be simplified. However, the storage in HDF5 file remains the same.</p>
-<h2><a class="anchor" id="Merict"></a>
-functions.</h2>
+<h2><a class="anchor" id="merit"></a>
+Merit functions.</h2>
 <p>The API provides also some Merit functions which measures if one set of vectors satisfies the previous problems. </p>
 </div></div><!-- contents -->
   <!--  <div id="right-column"> -->
@@ -143,7 +178,7 @@ functions.</h2>
    <div id="footer">
      <div class="address">
        <address>
-	 <small>Generated on Fri Dec 23 2016 18:44:01 for Introduction, using&nbsp;
+	 <small>Generated on Fri Dec 23 2016 20:46:52 for Introduction, using&nbsp;
 	   <a href="http://www.doxygen.org/index.html">
              <img style="width:54px;height:26px" src="doxygen.png" alt="doxygen" align="middle" border="0"/></a> 1.8.10
 	   Valid <a href="http://validator.w3.org/check?uri=referer" target="_blank" title="Check the XHTML validity of this page.">XHTML</a> &amp;

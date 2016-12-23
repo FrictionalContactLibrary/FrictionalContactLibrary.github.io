@@ -936,7 +936,6 @@
     <filename>download</filename>
     <docanchor file="download" title="How to download sources files of the API?">howtosources</docanchor>
     <docanchor file="download" title="How to download the collection of problems ?">howtolibrary</docanchor>
-    <docanchor file="download" title="Binaries">howto</docanchor>
   </compound>
   <compound kind="page">
     <name>contact</name>
@@ -980,11 +979,12 @@
     <filename>index</filename>
     <docanchor file="index" title="What is FCLIB ?">whatis</docanchor>
     <docanchor file="index" title="Goals of the project">goals</docanchor>
+    <docanchor file="index">References</docanchor>
     <docanchor file="index" title="How to download  ?">howtodownload</docanchor>
     <docanchor file="index" title="What is a Frictional contact problem ?">Wahtis</docanchor>
     <docanchor file="index" title="The local Frictional Contact problem with equality constraints">Localfclib</docanchor>
     <docanchor file="index" title="The Global Frictional Contact problem with equality constraints">globalfclib</docanchor>
     <docanchor file="index" title="Problems without equality constraints">without</docanchor>
-    <docanchor file="index" title="functions.">Merict</docanchor>
+    <docanchor file="index" title="Merit functions.">merit</docanchor>
   </compound>
 </tagfile>
