@@ -6,8 +6,14 @@
     <link href="doxygen.css" rel="stylesheet" type="text/css"/>
     <link href="tabs.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
     <script type="text/javascript"
-	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	    MathJax.Hub.Queue(function () {
+	    parent.page.setIframeHeight();
+	    });
+	    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
   </head>
   <body> 	
@@ -78,7 +84,7 @@
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/*   M-&gt;x = W-&gt;x; */</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/* } */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="fcmer_8c.html#a98e8be3f37690b649f87ba1d48d1bc9c">   27</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="fcmer_8c.html#a98e8be3f37690b649f87ba1d48d1bc9c">dnrm2</a>(<span class="keywordtype">double</span> * <a class="code" href="structfclib__solution.html#a252982ce524686a094223a55c194fea8">v</a> ,  <span class="keywordtype">int</span> n)</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="fcmer_8c.html#a21b2b1a5cdebb20cb283d5409db7f17b">   27</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="fcmer_8c.html#a21b2b1a5cdebb20cb283d5409db7f17b">dnrm2</a>(<span class="keywordtype">double</span> * <a class="code" href="structfclib__solution.html#a252982ce524686a094223a55c194fea8">v</a> ,  <span class="keywordtype">int</span> n)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">double</span> norm2=0.0;</div>
@@ -86,7 +92,7 @@
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">return</span> sqrt(norm2);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="fcmer_8c.html#a2148bd190e300797ee2f81a139ce4f38">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="fcmer_8c.html#a2148bd190e300797ee2f81a139ce4f38">projectionOnCone</a>(<span class="keywordtype">double</span>* <a class="code" href="structfclib__solution.html#aba0437aebbb1060350ef2f0a6e8b504d">r</a>, <span class="keywordtype">double</span>  mu)</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="fcmer_8c.html#a54a7859cadadbf77cbe50743347f33c5">   35</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="fcmer_8c.html#a54a7859cadadbf77cbe50743347f33c5">projectionOnCone</a>(<span class="keywordtype">double</span>* <a class="code" href="structfclib__solution.html#aba0437aebbb1060350ef2f0a6e8b504d">r</a>, <span class="keywordtype">double</span>  mu)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">double</span> normT = hypot(r[1], r[2]);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">if</span> (mu * normT &lt;= - r[0])</div>
@@ -120,7 +126,7 @@
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  worktmp[0] = z[0] -  (w[0] + mu * normUT);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  worktmp[1] = z[1] -   w[1] ;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  worktmp[2] = z[2] -  w[2] ;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="fcmer_8c.html#a2148bd190e300797ee2f81a139ce4f38">projectionOnCone</a>(worktmp, mu);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="fcmer_8c.html#a54a7859cadadbf77cbe50743347f33c5">projectionOnCone</a>(worktmp, mu);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  worktmp[0] = z[0] -  worktmp[0];</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  worktmp[1] = z[1] -  worktmp[1];</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  worktmp[2] = z[2] -  worktmp[2];</div>
@@ -182,7 +188,7 @@
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keywordflow">for</span> (i =0; i &lt;n_e; i++) tmp[i] = s[i] ;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      cs_gaxpy(VT, r, tmp);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      cs_gaxpy((cs *)R, l, tmp);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      error_l += <a class="code" href="fcmer_8c.html#a98e8be3f37690b649f87ba1d48d1bc9c">dnrm2</a>(tmp,n_e)/(1.0 +  <a class="code" href="fcmer_8c.html#a98e8be3f37690b649f87ba1d48d1bc9c">dnrm2</a>(s,n_e) );</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      error_l += <a class="code" href="fcmer_8c.html#a21b2b1a5cdebb20cb283d5409db7f17b">dnrm2</a>(tmp,n_e)/(1.0 +  <a class="code" href="fcmer_8c.html#a21b2b1a5cdebb20cb283d5409db7f17b">dnrm2</a>(s,n_e) );</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      free(tmp);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">/* compute  \hat u = W {r}    + V\lambda  + q  */</span></div>
@@ -200,7 +206,7 @@
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;          </div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    free(tmp);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    error = sqrt(error)/(1.0 +  sqrt(<a class="code" href="fcmer_8c.html#a98e8be3f37690b649f87ba1d48d1bc9c">dnrm2</a>(q,W-&gt;<a class="code" href="structfclib__matrix.html#ace0c395ca5da8a4bcc4958a29895c639">n</a>)) )+error_l;  </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    error = sqrt(error)/(1.0 +  sqrt(<a class="code" href="fcmer_8c.html#a21b2b1a5cdebb20cb283d5409db7f17b">dnrm2</a>(q,W-&gt;<a class="code" href="structfclib__matrix.html#ace0c395ca5da8a4bcc4958a29895c639">n</a>)) )+error_l;  </div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">/* printf(&quot;error_l = %12.8e&quot;, error_l); */</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">/* printf(&quot;norm of u  = %12.8e\n&quot;,  dnrm2(u,W-&gt;n)); */</span></div>
@@ -214,6 +220,7 @@
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
 <div class="ttc" id="structfclib__solution_html_a872a687856540dd19286aec43d890ede"><div class="ttname"><a href="structfclib__solution.html#a872a687856540dd19286aec43d890ede">fclib_solution::l</a></div><div class="ttdeci">double * l</div><div class="ttdoc">multiplier for equlity constraints ( ) solution vector </div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00263">fclib.h:263</a></div></div>
 <div class="ttc" id="structfclib__solution_html_aba0437aebbb1060350ef2f0a6e8b504d"><div class="ttname"><a href="structfclib__solution.html#aba0437aebbb1060350ef2f0a6e8b504d">fclib_solution::r</a></div><div class="ttdeci">double * r</div><div class="ttdoc">local contact forces (or impulses) solution vector </div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00261">fclib.h:261</a></div></div>
+<div class="ttc" id="fcmer_8c_html_a21b2b1a5cdebb20cb283d5409db7f17b"><div class="ttname"><a href="fcmer_8c.html#a21b2b1a5cdebb20cb283d5409db7f17b">dnrm2</a></div><div class="ttdeci">static double dnrm2(double *v, int n)</div><div class="ttdef"><b>Definition:</b> <a href="fcmer_8c_source.html#l00027">fcmer.c:27</a></div></div>
 <div class="ttc" id="structfclib__matrix_html_ace0c395ca5da8a4bcc4958a29895c639"><div class="ttname"><a href="structfclib__matrix.html#ace0c395ca5da8a4bcc4958a29895c639">fclib_matrix::n</a></div><div class="ttdeci">int n</div><div class="ttdoc">number of columns </div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00126">fclib.h:126</a></div></div>
 <div class="ttc" id="structfclib__matrix_html"><div class="ttname"><a href="structfclib__matrix.html">fclib_matrix</a></div><div class="ttdoc">matrix in compressed row/column or triplet form </div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00119">fclib.h:119</a></div></div>
 <div class="ttc" id="structfclib__solution_html"><div class="ttname"><a href="structfclib__solution.html">fclib_solution</a></div><div class="ttdoc">A solution or a guess for the frictional contact problem. </div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00254">fclib.h:254</a></div></div>
@@ -224,11 +231,10 @@
 <div class="ttc" id="structfclib__matrix_html_aed86c681657206e7502450e437dba667"><div class="ttname"><a href="structfclib__matrix.html#aed86c681657206e7502450e437dba667">fclib_matrix::i</a></div><div class="ttdeci">int * i</div><div class="ttdoc">compressed: column or row indices, size nzmax; triplet: column indices (size nz) </div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00130">fclib.h:130</a></div></div>
 <div class="ttc" id="structfclib__local_html_a9a032092a828a13a7e106cce4ba7ad96"><div class="ttname"><a href="structfclib__local.html#a9a032092a828a13a7e106cce4ba7ad96">fclib_local::q</a></div><div class="ttdeci">double * q</div><div class="ttdoc">the vector q (see mathematical description below) </div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00239">fclib.h:239</a></div></div>
 <div class="ttc" id="structfclib__local_html_accf07018913652e57be3a661b25d8bb7"><div class="ttname"><a href="structfclib__local.html#accf07018913652e57be3a661b25d8bb7">fclib_local::spacedim</a></div><div class="ttdeci">int spacedim</div><div class="ttdoc">the dimension , 2 or 3, of the local space at contact (2d or 3d friction contact laws) ...</div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00243">fclib.h:243</a></div></div>
-<div class="ttc" id="fcmer_8c_html_a98e8be3f37690b649f87ba1d48d1bc9c"><div class="ttname"><a href="fcmer_8c.html#a98e8be3f37690b649f87ba1d48d1bc9c">dnrm2</a></div><div class="ttdeci">double dnrm2(double *v, int n)</div><div class="ttdef"><b>Definition:</b> <a href="fcmer_8c_source.html#l00027">fcmer.c:27</a></div></div>
+<div class="ttc" id="fcmer_8c_html_a54a7859cadadbf77cbe50743347f33c5"><div class="ttname"><a href="fcmer_8c.html#a54a7859cadadbf77cbe50743347f33c5">projectionOnCone</a></div><div class="ttdeci">static void projectionOnCone(double *r, double mu)</div><div class="ttdef"><b>Definition:</b> <a href="fcmer_8c_source.html#l00035">fcmer.c:35</a></div></div>
 <div class="ttc" id="fclib_8h_html_a8d23c04ffda9ad1393fc7f3793e4a9a1"><div class="ttname"><a href="fclib_8h.html#a8d23c04ffda9ad1393fc7f3793e4a9a1">fclib_merit</a></div><div class="ttdeci">fclib_merit</div><div class="ttdoc">MERIT_1 is a implementation of the merit function based on the natural map for a SOCCP. </div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00269">fclib.h:269</a></div></div>
 <div class="ttc" id="structfclib__local_html_a981b5abb9acf3f99dffe9a05602ad864"><div class="ttname"><a href="structfclib__local.html#a981b5abb9acf3f99dffe9a05602ad864">fclib_local::W</a></div><div class="ttdeci">struct fclib_matrix * W</div><div class="ttdoc">the matrix W (see mathematical description below) </div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00231">fclib.h:231</a></div></div>
 <div class="ttc" id="structfclib__solution_html_acb160f0dad04b9420388464d256ae41f"><div class="ttname"><a href="structfclib__solution.html#acb160f0dad04b9420388464d256ae41f">fclib_solution::u</a></div><div class="ttdeci">double * u</div><div class="ttdoc">local velocity (or position/displacement for quasi-static problems) solution vector ...</div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00259">fclib.h:259</a></div></div>
-<div class="ttc" id="fcmer_8c_html_a2148bd190e300797ee2f81a139ce4f38"><div class="ttname"><a href="fcmer_8c.html#a2148bd190e300797ee2f81a139ce4f38">projectionOnCone</a></div><div class="ttdeci">void projectionOnCone(double *r, double mu)</div><div class="ttdef"><b>Definition:</b> <a href="fcmer_8c_source.html#l00035">fcmer.c:35</a></div></div>
 <div class="ttc" id="fcmer_8c_html_a60a8a78d06e2ba1a2dc5bce40d49113e"><div class="ttname"><a href="fcmer_8c.html#a60a8a78d06e2ba1a2dc5bce40d49113e">fclib_merit_local</a></div><div class="ttdeci">double fclib_merit_local(struct fclib_local *problem, enum fclib_merit merit, struct fclib_solution *solution)</div><div class="ttdoc">calculate merit function for a local problem </div><div class="ttdef"><b>Definition:</b> <a href="fcmer_8c_source.html#l00084">fcmer.c:84</a></div></div>
 <div class="ttc" id="structfclib__solution_html_a252982ce524686a094223a55c194fea8"><div class="ttname"><a href="structfclib__solution.html#a252982ce524686a094223a55c194fea8">fclib_solution::v</a></div><div class="ttdeci">double * v</div><div class="ttdoc">global velocity (or position/displacement for quasi-static problems) solution vector ...</div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00257">fclib.h:257</a></div></div>
 <div class="ttc" id="structfclib__local_html_a90d9490cac0bc9b69fd13253882f1557"><div class="ttname"><a href="structfclib__local.html#a90d9490cac0bc9b69fd13253882f1557">fclib_local::mu</a></div><div class="ttdeci">double * mu</div><div class="ttdoc">the vector  of coefficient of friction (see mathematical description below) </div><div class="ttdef"><b>Definition:</b> <a href="fclib_8h_source.html#l00237">fclib.h:237</a></div></div>
@@ -257,7 +263,7 @@
    <div id="footer">
      <div class="address">
        <address>
-	 <small>Generated on Fri Dec 23 2016 18:22:00 for fcmer.c Source File, using&nbsp;
+	 <small>Generated on Fri Dec 23 2016 18:44:01 for fcmer.c Source File, using&nbsp;
 	   <a href="http://www.doxygen.org/index.html">
              <img style="width:54px;height:26px" src="doxygen.png" alt="doxygen" align="middle" border="0"/></a> 1.8.10
 	   Valid <a href="http://validator.w3.org/check?uri=referer" target="_blank" title="Check the XHTML validity of this page.">XHTML</a> &amp;

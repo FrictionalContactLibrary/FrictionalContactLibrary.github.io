@@ -375,18 +375,18 @@
     <filename>fcmer_8c</filename>
     <includes id="fclib_8h" name="fclib.h" local="yes" imported="no">fclib.h</includes>
     <includes id="fcint_8h" name="fcint.h" local="yes" imported="no">fcint.h</includes>
-    <member kind="function">
-      <type>double</type>
+    <member kind="function" static="yes">
+      <type>static double</type>
       <name>dnrm2</name>
       <anchorfile>fcmer_8c.html</anchorfile>
-      <anchor>a98e8be3f37690b649f87ba1d48d1bc9c</anchor>
+      <anchor>a21b2b1a5cdebb20cb283d5409db7f17b</anchor>
       <arglist>(double *v, int n)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>projectionOnCone</name>
       <anchorfile>fcmer_8c.html</anchorfile>
-      <anchor>a2148bd190e300797ee2f81a139ce4f38</anchor>
+      <anchor>a54a7859cadadbf77cbe50743347f33c5</anchor>
       <arglist>(double *r, double mu)</arglist>
     </member>
     <member kind="function">

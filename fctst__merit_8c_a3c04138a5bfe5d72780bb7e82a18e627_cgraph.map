@@ -11,9 +11,9 @@
 <area shape="rect" id="node3" href="$fclib_8c.html#a0b6e96725a6f98fdd3b49cdaea3aa38d" title="delete problem info " alt="" coords="346,5,433,32"/>
 <area shape="rect" id="node4" href="$fclib_8c.html#ab5f8fb6fdbd5d68d93e1b68e8b009581" title="delete matrix " alt="" coords="338,56,441,83"/>
 <area shape="rect" id="node5" href="$fclib_8c.html#ac35480502e8612c3717d5fc6279de0c5" title="delete matrix info " alt="" coords="525,56,656,83"/>
-<area shape="rect" id="node10" href="$fcmer_8c.html#a98e8be3f37690b649f87ba1d48d1bc9c" title="dnrm2" alt="" coords="359,107,419,133"/>
+<area shape="rect" id="node10" href="$fcmer_8c.html#a21b2b1a5cdebb20cb283d5409db7f17b" title="dnrm2" alt="" coords="359,107,419,133"/>
 <area shape="rect" id="node11" href="$fcmer_8c.html#afee93cccfbaff1232c6083249e1a5e7e" title="FrictionContact3D_unitary\l_compute_and_add_error" alt="" coords="301,158,477,199"/>
-<area shape="rect" id="node12" href="$fcmer_8c.html#a2148bd190e300797ee2f81a139ce4f38" title="projectionOnCone" alt="" coords="526,165,655,192"/>
+<area shape="rect" id="node12" href="$fcmer_8c.html#a54a7859cadadbf77cbe50743347f33c5" title="projectionOnCone" alt="" coords="526,165,655,192"/>
 <area shape="rect" id="node14" href="$fclib_8c.html#a7c692e0eee1727bb5a3033bd2330d81c" title="read global vectors " alt="" coords="318,224,461,251"/>
 <area shape="rect" id="node15" href="$fclib_8c.html#a39c7990d9fd2ab18430feb9814c1e69d" title="read matrix " alt="" coords="343,275,435,301"/>
 <area shape="rect" id="node16" href="$fclib_8c.html#a027ca7a38adea4ea55cd4ad3af71505d" title="read problem info " alt="" coords="323,325,456,352"/>

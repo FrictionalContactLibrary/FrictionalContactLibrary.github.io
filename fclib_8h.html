@@ -6,8 +6,14 @@
     <link href="doxygen.css" rel="stylesheet" type="text/css"/>
     <link href="tabs.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
     <script type="text/javascript"
-	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	    MathJax.Hub.Queue(function () {
+	    parent.page.setIframeHeight();
+	    });
+	    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
   </head>
   <body> 	
@@ -61,8 +67,6 @@
 Include dependency graph for fclib.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="fclib_8h__incl.png" border="0" usemap="#fclib_8h" alt=""/></div>
-<map name="fclib_8h" id="fclib_8h">
-</map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -240,9 +244,9 @@ a vector of coefficients of friction \(\mu \in {\mathrm{I\!R}}^{n_c}\) </li>
 
 <p>write global problem; return 1 on success, 0 on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00431">431</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00436">436</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00191">fclib_global::spacedim</a>, <a class="el" href="fclib_8c_source.html#l00156">write_global_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00051">write_matrix()</a>, and <a class="el" href="fclib_8c_source.html#l00237">write_problem_info()</a>.</p>
+<p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00191">fclib_global::spacedim</a>, <a class="el" href="fclib_8c_source.html#l00160">write_global_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00051">write_matrix()</a>, and <a class="el" href="fclib_8c_source.html#l00241">write_problem_info()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -287,9 +291,9 @@ Here is the call graph for this function:</div>
 
 <p>write local problem; return 1 on success, 0 on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00503">503</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00508">508</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8h_source.html#l00243">fclib_local::spacedim</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>, <a class="el" href="fclib_8c_source.html#l00199">write_local_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00051">write_matrix()</a>, and <a class="el" href="fclib_8c_source.html#l00237">write_problem_info()</a>.</p>
+<p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8h_source.html#l00243">fclib_local::spacedim</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>, <a class="el" href="fclib_8c_source.html#l00203">write_local_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00051">write_matrix()</a>, and <a class="el" href="fclib_8c_source.html#l00241">write_problem_info()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -334,9 +338,9 @@ Here is the call graph for this function:</div>
 
 <p>write solution; return 1 on success, 0 on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00571">571</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00576">576</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8c_source.html#l00317">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00282">write_solution()</a>.</p>
+<p>References <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8c_source.html#l00321">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00286">write_solution()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -386,9 +390,9 @@ Here is the call graph for this function:</div>
 
 <p>write initial guesses; return 1 on success, 0 on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00611">611</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00616">616</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8c_source.html#l00317">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00282">write_solution()</a>.</p>
+<p>References <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8c_source.html#l00321">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00286">write_solution()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -422,9 +426,9 @@ Here is the call graph for this function:</div>
 
 <p>read global problem; return problem on success; NULL on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00661">661</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00666">666</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00180">read_global_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00096">read_matrix()</a>, <a class="el" href="fclib_8c_source.html#l00245">read_problem_info()</a>, and <a class="el" href="fclib_8h_source.html#l00191">fclib_global::spacedim</a>.</p>
+<p>References <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00184">read_global_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00096">read_matrix()</a>, <a class="el" href="fclib_8c_source.html#l00249">read_problem_info()</a>, and <a class="el" href="fclib_8h_source.html#l00191">fclib_global::spacedim</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -458,9 +462,9 @@ Here is the call graph for this function:</div>
 
 <p>read local problem; return problem on success; NULL on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00711">711</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00716">716</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8c_source.html#l00220">read_local_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00096">read_matrix()</a>, <a class="el" href="fclib_8c_source.html#l00245">read_problem_info()</a>, <a class="el" href="fclib_8h_source.html#l00243">fclib_local::spacedim</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
+<p>References <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8c_source.html#l00224">read_local_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00096">read_matrix()</a>, <a class="el" href="fclib_8c_source.html#l00249">read_problem_info()</a>, <a class="el" href="fclib_8h_source.html#l00243">fclib_local::spacedim</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -494,9 +498,9 @@ Here is the call graph for this function:</div>
 
 <p>read solution; return solution on success; NULL on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00761">761</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00772">772</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00317">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00293">read_solution()</a>.</p>
+<p>References <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00321">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00297">read_solution()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -539,9 +543,9 @@ Here is the call graph for this function:</div>
 
 <p>read initial guesses; return vector of guesses on success; NULL on failure; output numebr of guesses in the variable pointed by 'number_of_guesses' </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00789">789</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00800">800</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00317">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00293">read_solution()</a>.</p>
+<p>References <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00321">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00297">read_solution()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -639,9 +643,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="fclib_8h_a60a8a78d06e2ba1a2dc5bce40d49113e_cgraph.png" border="0" usemap="#fclib_8h_a60a8a78d06e2ba1a2dc5bce40d49113e_cgraph" alt=""/></div>
 <map name="fclib_8h_a60a8a78d06e2ba1a2dc5bce40d49113e_cgraph" id="fclib_8h_a60a8a78d06e2ba1a2dc5bce40d49113e_cgraph">
-<area shape="rect" id="node2" href="fcmer_8c.html#a98e8be3f37690b649f87ba1d48d1bc9c" title="dnrm2" alt="" coords="229,5,289,32"/>
+<area shape="rect" id="node2" href="fcmer_8c.html#a21b2b1a5cdebb20cb283d5409db7f17b" title="dnrm2" alt="" coords="229,5,289,32"/>
 <area shape="rect" id="node3" href="fcmer_8c.html#afee93cccfbaff1232c6083249e1a5e7e" title="FrictionContact3D_unitary\l_compute_and_add_error" alt="" coords="171,57,347,98"/>
-<area shape="rect" id="node4" href="fcmer_8c.html#a2148bd190e300797ee2f81a139ce4f38" title="projectionOnCone" alt="" coords="395,64,524,91"/>
+<area shape="rect" id="node4" href="fcmer_8c.html#a54a7859cadadbf77cbe50743347f33c5" title="projectionOnCone" alt="" coords="395,64,524,91"/>
 </map>
 </div>
 </p>
@@ -664,9 +668,9 @@ Here is the call graph for this function:</div>
 
 <p>delete global problem </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00829">829</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00840">840</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8h_source.html#l00187">fclib_global::b</a>, <a class="el" href="fclib_8c_source.html#l00372">delete_info()</a>, <a class="el" href="fclib_8c_source.html#l00359">delete_matrix()</a>, <a class="el" href="fclib_8h_source.html#l00185">fclib_global::f</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00183">fclib_global::mu</a>, and <a class="el" href="fclib_8h_source.html#l00189">fclib_global::w</a>.</p>
+<p>References <a class="el" href="fclib_8h_source.html#l00187">fclib_global::b</a>, <a class="el" href="fclib_8c_source.html#l00376">delete_info()</a>, <a class="el" href="fclib_8c_source.html#l00363">delete_matrix()</a>, <a class="el" href="fclib_8h_source.html#l00185">fclib_global::f</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00183">fclib_global::mu</a>, and <a class="el" href="fclib_8h_source.html#l00189">fclib_global::w</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -700,9 +704,9 @@ Here is the call graph for this function:</div>
 
 <p>delete local problem </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00842">842</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00853">853</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8c_source.html#l00372">delete_info()</a>, <a class="el" href="fclib_8c_source.html#l00359">delete_matrix()</a>, <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fclib_8h_source.html#l00237">fclib_local::mu</a>, <a class="el" href="fclib_8h_source.html#l00239">fclib_local::q</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8h_source.html#l00241">fclib_local::s</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
+<p>References <a class="el" href="fclib_8c_source.html#l00376">delete_info()</a>, <a class="el" href="fclib_8c_source.html#l00363">delete_matrix()</a>, <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fclib_8h_source.html#l00237">fclib_local::mu</a>, <a class="el" href="fclib_8h_source.html#l00239">fclib_local::q</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8h_source.html#l00241">fclib_local::s</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -746,7 +750,7 @@ Here is the call graph for this function:</div>
 
 <p>delete solutions or guesses </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00854">854</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00865">865</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fclib_8h_source.html#l00263">fclib_solution::l</a>, <a class="el" href="fclib_8h_source.html#l00261">fclib_solution::r</a>, <a class="el" href="fclib_8h_source.html#l00259">fclib_solution::u</a>, and <a class="el" href="fclib_8h_source.html#l00257">fclib_solution::v</a>.</p>
 
@@ -786,7 +790,7 @@ Here is the call graph for this function:</div>
 
 <p>create and set attributes of tyoe int in info </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00382">382</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00387">387</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, and <a class="el" href="fcint_8h_source.html#l00017">IO</a>.</p>
 
@@ -821,7 +825,7 @@ Here is the call graph for this function:</div>
    <div id="footer">
      <div class="address">
        <address>
-	 <small>Generated on Fri Dec 23 2016 18:22:00 for fclib.h File Reference, using&nbsp;
+	 <small>Generated on Fri Dec 23 2016 18:44:01 for fclib.h File Reference, using&nbsp;
 	   <a href="http://www.doxygen.org/index.html">
              <img style="width:54px;height:26px" src="doxygen.png" alt="doxygen" align="middle" border="0"/></a> 1.8.10
 	   Valid <a href="http://validator.w3.org/check?uri=referer" target="_blank" title="Check the XHTML validity of this page.">XHTML</a> &amp;

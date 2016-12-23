@@ -6,8 +6,14 @@
     <link href="doxygen.css" rel="stylesheet" type="text/css"/>
     <link href="tabs.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
     <script type="text/javascript"
-	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	    MathJax.Hub.Queue(function () {
+	    parent.page.setIframeHeight();
+	    });
+	    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
   </head>
   <body> 	
@@ -93,7 +99,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fclib_8h_source.html#l00257">257</a> of file <a class="el" href="fclib_8h_source.html">fclib.h</a>.</p>
 
-<p>Referenced by <a class="el" href="fctst_8c_source.html#l00390">compare_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00854">fclib_delete_solutions()</a>, <a class="el" href="fcmer_8c_source.html#l00084">fclib_merit_local()</a>, <a class="el" href="fctst_8c_source.html#l00141">random_global_solutions()</a>, <a class="el" href="fctst_8c_source.html#l00189">random_local_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00293">read_solution()</a>, and <a class="el" href="fclib_8c_source.html#l00282">write_solution()</a>.</p>
+<p>Referenced by <a class="el" href="fctst_8c_source.html#l00390">compare_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00865">fclib_delete_solutions()</a>, <a class="el" href="fcmer_8c_source.html#l00084">fclib_merit_local()</a>, <a class="el" href="fctst_8c_source.html#l00141">random_global_solutions()</a>, <a class="el" href="fctst_8c_source.html#l00189">random_local_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00297">read_solution()</a>, and <a class="el" href="fclib_8c_source.html#l00286">write_solution()</a>.</p>
 
 </div>
 </div>
@@ -111,7 +117,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fclib_8h_source.html#l00259">259</a> of file <a class="el" href="fclib_8h_source.html">fclib.h</a>.</p>
 
-<p>Referenced by <a class="el" href="fctst_8c_source.html#l00390">compare_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00854">fclib_delete_solutions()</a>, <a class="el" href="fcmer_8c_source.html#l00084">fclib_merit_local()</a>, <a class="el" href="fctst_8c_source.html#l00141">random_global_solutions()</a>, <a class="el" href="fctst_8c_source.html#l00189">random_local_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00293">read_solution()</a>, and <a class="el" href="fclib_8c_source.html#l00282">write_solution()</a>.</p>
+<p>Referenced by <a class="el" href="fctst_8c_source.html#l00390">compare_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00865">fclib_delete_solutions()</a>, <a class="el" href="fcmer_8c_source.html#l00084">fclib_merit_local()</a>, <a class="el" href="fctst_8c_source.html#l00141">random_global_solutions()</a>, <a class="el" href="fctst_8c_source.html#l00189">random_local_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00297">read_solution()</a>, and <a class="el" href="fclib_8c_source.html#l00286">write_solution()</a>.</p>
 
 </div>
 </div>
@@ -129,7 +135,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fclib_8h_source.html#l00261">261</a> of file <a class="el" href="fclib_8h_source.html">fclib.h</a>.</p>
 
-<p>Referenced by <a class="el" href="fctst_8c_source.html#l00390">compare_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00854">fclib_delete_solutions()</a>, <a class="el" href="fcmer_8c_source.html#l00084">fclib_merit_local()</a>, <a class="el" href="fctst_8c_source.html#l00141">random_global_solutions()</a>, <a class="el" href="fctst_8c_source.html#l00189">random_local_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00293">read_solution()</a>, and <a class="el" href="fclib_8c_source.html#l00282">write_solution()</a>.</p>
+<p>Referenced by <a class="el" href="fctst_8c_source.html#l00390">compare_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00865">fclib_delete_solutions()</a>, <a class="el" href="fcmer_8c_source.html#l00084">fclib_merit_local()</a>, <a class="el" href="fctst_8c_source.html#l00141">random_global_solutions()</a>, <a class="el" href="fctst_8c_source.html#l00189">random_local_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00297">read_solution()</a>, and <a class="el" href="fclib_8c_source.html#l00286">write_solution()</a>.</p>
 
 </div>
 </div>
@@ -147,7 +153,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fclib_8h_source.html#l00263">263</a> of file <a class="el" href="fclib_8h_source.html">fclib.h</a>.</p>
 
-<p>Referenced by <a class="el" href="fctst_8c_source.html#l00390">compare_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00854">fclib_delete_solutions()</a>, <a class="el" href="fcmer_8c_source.html#l00084">fclib_merit_local()</a>, <a class="el" href="fctst_8c_source.html#l00141">random_global_solutions()</a>, <a class="el" href="fctst_8c_source.html#l00189">random_local_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00293">read_solution()</a>, and <a class="el" href="fclib_8c_source.html#l00282">write_solution()</a>.</p>
+<p>Referenced by <a class="el" href="fctst_8c_source.html#l00390">compare_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00865">fclib_delete_solutions()</a>, <a class="el" href="fcmer_8c_source.html#l00084">fclib_merit_local()</a>, <a class="el" href="fctst_8c_source.html#l00141">random_global_solutions()</a>, <a class="el" href="fctst_8c_source.html#l00189">random_local_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00297">read_solution()</a>, and <a class="el" href="fclib_8c_source.html#l00286">write_solution()</a>.</p>
 
 </div>
 </div>
@@ -170,7 +176,7 @@ Public Attributes</h2></td></tr>
    <div id="footer">
      <div class="address">
        <address>
-	 <small>Generated on Fri Dec 23 2016 18:22:00 for fclib_solution Struct Reference, using&nbsp;
+	 <small>Generated on Fri Dec 23 2016 18:44:01 for fclib_solution Struct Reference, using&nbsp;
 	   <a href="http://www.doxygen.org/index.html">
              <img style="width:54px;height:26px" src="doxygen.png" alt="doxygen" align="middle" border="0"/></a> 1.8.10
 	   Valid <a href="http://validator.w3.org/check?uri=referer" target="_blank" title="Check the XHTML validity of this page.">XHTML</a> &amp;

@@ -6,8 +6,14 @@
     <link href="doxygen.css" rel="stylesheet" type="text/css"/>
     <link href="tabs.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
     <script type="text/javascript"
-	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	    MathJax.Hub.Queue(function () {
+	    parent.page.setIframeHeight();
+	    });
+	    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
   </head>
   <body> 	
@@ -872,7 +878,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="fctst_8c_source.html#l00400">400</a> of file <a class="el" href="fctst_8c_source.html">fctst.c</a>.</p>
 
-<p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fctst_8c_source.html#l00359">compare_global_problems()</a>, <a class="el" href="fctst_8c_source.html#l00375">compare_local_problems()</a>, <a class="el" href="fctst_8c_source.html#l00390">compare_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00829">fclib_delete_global()</a>, <a class="el" href="fclib_8c_source.html#l00842">fclib_delete_local()</a>, <a class="el" href="fclib_8c_source.html#l00854">fclib_delete_solutions()</a>, <a class="el" href="fcmer_8c_source.html#l00084">fclib_merit_local()</a>, <a class="el" href="fclib_8c_source.html#l00661">fclib_read_global()</a>, <a class="el" href="fclib_8c_source.html#l00789">fclib_read_guesses()</a>, <a class="el" href="fclib_8c_source.html#l00711">fclib_read_local()</a>, <a class="el" href="fclib_8c_source.html#l00761">fclib_read_solution()</a>, <a class="el" href="fclib_8c_source.html#l00431">fclib_write_global()</a>, <a class="el" href="fclib_8c_source.html#l00611">fclib_write_guesses()</a>, <a class="el" href="fclib_8c_source.html#l00503">fclib_write_local()</a>, <a class="el" href="fclib_8c_source.html#l00571">fclib_write_solution()</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8h_source.html#l00124">fclib_matrix::m</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00269">MERIT_1</a>, <a class="el" href="fclib_8h_source.html#l00126">fclib_matrix::n</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fctst_8c_source.html#l00118">random_global_problem()</a>, <a class="el" href="fctst_8c_source.html#l00141">random_global_solutions()</a>, <a class="el" href="fctst_8c_source.html#l00161">random_local_problem()</a>, <a class="el" href="fctst_8c_source.html#l00189">random_local_solutions()</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
+<p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fctst_8c_source.html#l00359">compare_global_problems()</a>, <a class="el" href="fctst_8c_source.html#l00375">compare_local_problems()</a>, <a class="el" href="fctst_8c_source.html#l00390">compare_solutions()</a>, <a class="el" href="fclib_8c_source.html#l00840">fclib_delete_global()</a>, <a class="el" href="fclib_8c_source.html#l00853">fclib_delete_local()</a>, <a class="el" href="fclib_8c_source.html#l00865">fclib_delete_solutions()</a>, <a class="el" href="fcmer_8c_source.html#l00084">fclib_merit_local()</a>, <a class="el" href="fclib_8c_source.html#l00666">fclib_read_global()</a>, <a class="el" href="fclib_8c_source.html#l00800">fclib_read_guesses()</a>, <a class="el" href="fclib_8c_source.html#l00716">fclib_read_local()</a>, <a class="el" href="fclib_8c_source.html#l00772">fclib_read_solution()</a>, <a class="el" href="fclib_8c_source.html#l00436">fclib_write_global()</a>, <a class="el" href="fclib_8c_source.html#l00616">fclib_write_guesses()</a>, <a class="el" href="fclib_8c_source.html#l00508">fclib_write_local()</a>, <a class="el" href="fclib_8c_source.html#l00576">fclib_write_solution()</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8h_source.html#l00124">fclib_matrix::m</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00269">MERIT_1</a>, <a class="el" href="fclib_8h_source.html#l00126">fclib_matrix::n</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fctst_8c_source.html#l00118">random_global_problem()</a>, <a class="el" href="fctst_8c_source.html#l00141">random_global_solutions()</a>, <a class="el" href="fctst_8c_source.html#l00161">random_local_problem()</a>, <a class="el" href="fctst_8c_source.html#l00189">random_local_solutions()</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -905,9 +911,9 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node10" href="fclib_8c.html#a0b6e96725a6f98fdd3b49cdaea3aa38d" title="delete problem info " alt="" coords="375,157,462,184"/>
 <area shape="rect" id="node11" href="fclib_8c.html#ab5f8fb6fdbd5d68d93e1b68e8b009581" title="delete matrix " alt="" coords="367,208,470,235"/>
 <area shape="rect" id="node12" href="fclib_8c.html#ac35480502e8612c3717d5fc6279de0c5" title="delete matrix info " alt="" coords="566,208,697,235"/>
-<area shape="rect" id="node16" href="fcmer_8c.html#a98e8be3f37690b649f87ba1d48d1bc9c" title="dnrm2" alt="" coords="389,259,449,285"/>
+<area shape="rect" id="node16" href="fcmer_8c.html#a21b2b1a5cdebb20cb283d5409db7f17b" title="dnrm2" alt="" coords="389,259,449,285"/>
 <area shape="rect" id="node17" href="fcmer_8c.html#afee93cccfbaff1232c6083249e1a5e7e" title="FrictionContact3D_unitary\l_compute_and_add_error" alt="" coords="331,310,507,351"/>
-<area shape="rect" id="node18" href="fcmer_8c.html#a2148bd190e300797ee2f81a139ce4f38" title="projectionOnCone" alt="" coords="567,317,696,344"/>
+<area shape="rect" id="node18" href="fcmer_8c.html#a54a7859cadadbf77cbe50743347f33c5" title="projectionOnCone" alt="" coords="567,317,696,344"/>
 <area shape="rect" id="node20" href="fclib_8c.html#a7c692e0eee1727bb5a3033bd2330d81c" title="read global vectors " alt="" coords="347,376,490,403"/>
 <area shape="rect" id="node21" href="fclib_8c.html#a39c7990d9fd2ab18430feb9814c1e69d" title="read matrix " alt="" coords="373,427,465,453"/>
 <area shape="rect" id="node22" href="fclib_8c.html#a027ca7a38adea4ea55cd4ad3af71505d" title="read problem info " alt="" coords="352,477,485,504"/>
@@ -949,7 +955,7 @@ Here is the call graph for this function:</div>
    <div id="footer">
      <div class="address">
        <address>
-	 <small>Generated on Fri Dec 23 2016 18:22:00 for fctst.c File Reference, using&nbsp;
+	 <small>Generated on Fri Dec 23 2016 18:44:01 for fctst.c File Reference, using&nbsp;
 	   <a href="http://www.doxygen.org/index.html">
              <img style="width:54px;height:26px" src="doxygen.png" alt="doxygen" align="middle" border="0"/></a> 1.8.10
 	   Valid <a href="http://validator.w3.org/check?uri=referer" target="_blank" title="Check the XHTML validity of this page.">XHTML</a> &amp;

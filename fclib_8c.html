@@ -6,8 +6,14 @@
     <link href="doxygen.css" rel="stylesheet" type="text/css"/>
     <link href="tabs.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
     <script type="text/javascript"
-	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	    MathJax.Hub.Queue(function () {
+	    parent.page.setIframeHeight();
+	    });
+	    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
   </head>
   <body> 	
@@ -236,7 +242,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fclib_8c_source.html#l00037">37</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00382">fclib_create_int_attributes_in_info()</a>, <a class="el" href="fclib_8c_source.html#l00431">fclib_write_global()</a>, <a class="el" href="fclib_8c_source.html#l00611">fclib_write_guesses()</a>, <a class="el" href="fclib_8c_source.html#l00503">fclib_write_local()</a>, and <a class="el" href="fclib_8c_source.html#l00571">fclib_write_solution()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00387">fclib_create_int_attributes_in_info()</a>, <a class="el" href="fclib_8c_source.html#l00436">fclib_write_global()</a>, <a class="el" href="fclib_8c_source.html#l00616">fclib_write_guesses()</a>, <a class="el" href="fclib_8c_source.html#l00508">fclib_write_local()</a>, and <a class="el" href="fclib_8c_source.html#l00576">fclib_write_solution()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +284,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8h_source.html#l00107">fclib_matrix_info::comment</a>, <a class="el" href="fclib_8h_source.html#l00109">fclib_matrix_info::conditioning</a>, <a class="el" href="fclib_8h_source.html#l00111">fclib_matrix_info::determinant</a>, <a class="el" href="fclib_8h_source.html#l00130">fclib_matrix::i</a>, <a class="el" href="fclib_8h_source.html#l00136">fclib_matrix::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00124">fclib_matrix::m</a>, <a class="el" href="fclib_8h_source.html#l00126">fclib_matrix::n</a>, <a class="el" href="fclib_8h_source.html#l00134">fclib_matrix::nz</a>, <a class="el" href="fclib_8h_source.html#l00122">fclib_matrix::nzmax</a>, <a class="el" href="fclib_8h_source.html#l00128">fclib_matrix::p</a>, <a class="el" href="fclib_8h_source.html#l00113">fclib_matrix_info::rank</a>, and <a class="el" href="fclib_8h_source.html#l00132">fclib_matrix::x</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00431">fclib_write_global()</a>, and <a class="el" href="fclib_8c_source.html#l00503">fclib_write_local()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00436">fclib_write_global()</a>, and <a class="el" href="fclib_8c_source.html#l00508">fclib_write_local()</a>.</p>
 
 </div>
 </div>
@@ -302,7 +308,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8h_source.html#l00107">fclib_matrix_info::comment</a>, <a class="el" href="fclib_8h_source.html#l00109">fclib_matrix_info::conditioning</a>, <a class="el" href="fclib_8h_source.html#l00111">fclib_matrix_info::determinant</a>, <a class="el" href="fclib_8h_source.html#l00130">fclib_matrix::i</a>, <a class="el" href="fclib_8h_source.html#l00136">fclib_matrix::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00124">fclib_matrix::m</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8h_source.html#l00126">fclib_matrix::n</a>, <a class="el" href="fclib_8h_source.html#l00134">fclib_matrix::nz</a>, <a class="el" href="fclib_8h_source.html#l00122">fclib_matrix::nzmax</a>, <a class="el" href="fclib_8h_source.html#l00128">fclib_matrix::p</a>, <a class="el" href="fclib_8h_source.html#l00113">fclib_matrix_info::rank</a>, and <a class="el" href="fclib_8h_source.html#l00132">fclib_matrix::x</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00661">fclib_read_global()</a>, and <a class="el" href="fclib_8c_source.html#l00711">fclib_read_local()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00666">fclib_read_global()</a>, and <a class="el" href="fclib_8c_source.html#l00716">fclib_read_local()</a>.</p>
 
 </div>
 </div>
@@ -340,11 +346,11 @@ Functions</h2></td></tr>
 
 <p>write global vectors </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00156">156</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00160">160</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8h_source.html#l00187">fclib_global::b</a>, <a class="el" href="fclib_8h_source.html#l00185">fclib_global::f</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00124">fclib_matrix::m</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00183">fclib_global::mu</a>, <a class="el" href="fclib_8h_source.html#l00126">fclib_matrix::n</a>, <a class="el" href="fclib_8h_source.html#l00191">fclib_global::spacedim</a>, and <a class="el" href="fclib_8h_source.html#l00189">fclib_global::w</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00431">fclib_write_global()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00436">fclib_write_global()</a>.</p>
 
 </div>
 </div>
@@ -382,11 +388,11 @@ Functions</h2></td></tr>
 
 <p>read global vectors </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00180">180</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00184">184</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8h_source.html#l00187">fclib_global::b</a>, <a class="el" href="fclib_8h_source.html#l00185">fclib_global::f</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00124">fclib_matrix::m</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8h_source.html#l00183">fclib_global::mu</a>, <a class="el" href="fclib_8h_source.html#l00126">fclib_matrix::n</a>, <a class="el" href="fclib_8h_source.html#l00191">fclib_global::spacedim</a>, and <a class="el" href="fclib_8h_source.html#l00189">fclib_global::w</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00661">fclib_read_global()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00666">fclib_read_global()</a>.</p>
 
 </div>
 </div>
@@ -424,11 +430,11 @@ Functions</h2></td></tr>
 
 <p>write local vectors </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00199">199</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00203">203</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00124">fclib_matrix::m</a>, <a class="el" href="fclib_8h_source.html#l00237">fclib_local::mu</a>, <a class="el" href="fclib_8h_source.html#l00239">fclib_local::q</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8h_source.html#l00241">fclib_local::s</a>, <a class="el" href="fclib_8h_source.html#l00243">fclib_local::spacedim</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00503">fclib_write_local()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00508">fclib_write_local()</a>.</p>
 
 </div>
 </div>
@@ -466,11 +472,11 @@ Functions</h2></td></tr>
 
 <p>read local vectors </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00220">220</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00224">224</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00124">fclib_matrix::m</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8h_source.html#l00237">fclib_local::mu</a>, <a class="el" href="fclib_8h_source.html#l00239">fclib_local::q</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8h_source.html#l00241">fclib_local::s</a>, <a class="el" href="fclib_8h_source.html#l00243">fclib_local::spacedim</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00711">fclib_read_local()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00716">fclib_read_local()</a>.</p>
 
 </div>
 </div>
@@ -508,11 +514,11 @@ Functions</h2></td></tr>
 
 <p>write problem info </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00237">237</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00241">241</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fclib_8h_source.html#l00096">fclib_info::description</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00098">fclib_info::math_info</a>, and <a class="el" href="fclib_8h_source.html#l00094">fclib_info::title</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00431">fclib_write_global()</a>, and <a class="el" href="fclib_8c_source.html#l00503">fclib_write_local()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00436">fclib_write_global()</a>, and <a class="el" href="fclib_8c_source.html#l00508">fclib_write_local()</a>.</p>
 
 </div>
 </div>
@@ -540,11 +546,11 @@ Functions</h2></td></tr>
 
 <p>read problem info </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00245">245</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00249">249</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fclib_8h_source.html#l00096">fclib_info::description</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00098">fclib_info::math_info</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, and <a class="el" href="fclib_8h_source.html#l00094">fclib_info::title</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00661">fclib_read_global()</a>, and <a class="el" href="fclib_8c_source.html#l00711">fclib_read_local()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00666">fclib_read_global()</a>, and <a class="el" href="fclib_8c_source.html#l00716">fclib_read_local()</a>.</p>
 
 </div>
 </div>
@@ -600,11 +606,11 @@ Functions</h2></td></tr>
 
 <p>write solution </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00282">282</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00286">286</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00263">fclib_solution::l</a>, <a class="el" href="fclib_8h_source.html#l00261">fclib_solution::r</a>, <a class="el" href="fclib_8h_source.html#l00259">fclib_solution::u</a>, and <a class="el" href="fclib_8h_source.html#l00257">fclib_solution::v</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00611">fclib_write_guesses()</a>, and <a class="el" href="fclib_8c_source.html#l00571">fclib_write_solution()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00616">fclib_write_guesses()</a>, and <a class="el" href="fclib_8c_source.html#l00576">fclib_write_solution()</a>.</p>
 
 </div>
 </div>
@@ -660,11 +666,11 @@ Functions</h2></td></tr>
 
 <p>read solution </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00293">293</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00297">297</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00263">fclib_solution::l</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8h_source.html#l00261">fclib_solution::r</a>, <a class="el" href="fclib_8h_source.html#l00259">fclib_solution::u</a>, and <a class="el" href="fclib_8h_source.html#l00257">fclib_solution::v</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00789">fclib_read_guesses()</a>, and <a class="el" href="fclib_8c_source.html#l00761">fclib_read_solution()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00800">fclib_read_guesses()</a>, and <a class="el" href="fclib_8c_source.html#l00772">fclib_read_solution()</a>.</p>
 
 </div>
 </div>
@@ -714,11 +720,11 @@ Functions</h2></td></tr>
 
 <p>read solution sizes </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00317">317</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00321">321</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fcint_8h_source.html#l00017">IO</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00789">fclib_read_guesses()</a>, <a class="el" href="fclib_8c_source.html#l00761">fclib_read_solution()</a>, <a class="el" href="fclib_8c_source.html#l00611">fclib_write_guesses()</a>, and <a class="el" href="fclib_8c_source.html#l00571">fclib_write_solution()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00800">fclib_read_guesses()</a>, <a class="el" href="fclib_8c_source.html#l00772">fclib_read_solution()</a>, <a class="el" href="fclib_8c_source.html#l00616">fclib_write_guesses()</a>, and <a class="el" href="fclib_8c_source.html#l00576">fclib_write_solution()</a>.</p>
 
 </div>
 </div>
@@ -746,11 +752,11 @@ Functions</h2></td></tr>
 
 <p>delete matrix info </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00349">349</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00353">353</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fclib_8h_source.html#l00107">fclib_matrix_info::comment</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00359">delete_matrix()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00363">delete_matrix()</a>.</p>
 
 </div>
 </div>
@@ -778,11 +784,11 @@ Functions</h2></td></tr>
 
 <p>delete matrix </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00359">359</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00363">363</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8c_source.html#l00349">delete_matrix_info()</a>, <a class="el" href="fclib_8h_source.html#l00130">fclib_matrix::i</a>, <a class="el" href="fclib_8h_source.html#l00136">fclib_matrix::info</a>, <a class="el" href="fclib_8h_source.html#l00128">fclib_matrix::p</a>, and <a class="el" href="fclib_8h_source.html#l00132">fclib_matrix::x</a>.</p>
+<p>References <a class="el" href="fclib_8c_source.html#l00353">delete_matrix_info()</a>, <a class="el" href="fclib_8h_source.html#l00130">fclib_matrix::i</a>, <a class="el" href="fclib_8h_source.html#l00136">fclib_matrix::info</a>, <a class="el" href="fclib_8h_source.html#l00128">fclib_matrix::p</a>, and <a class="el" href="fclib_8h_source.html#l00132">fclib_matrix::x</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00829">fclib_delete_global()</a>, and <a class="el" href="fclib_8c_source.html#l00842">fclib_delete_local()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00840">fclib_delete_global()</a>, and <a class="el" href="fclib_8c_source.html#l00853">fclib_delete_local()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -820,11 +826,11 @@ Here is the call graph for this function:</div>
 
 <p>delete problem info </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00372">372</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00376">376</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fclib_8h_source.html#l00096">fclib_info::description</a>, <a class="el" href="fclib_8h_source.html#l00098">fclib_info::math_info</a>, and <a class="el" href="fclib_8h_source.html#l00094">fclib_info::title</a>.</p>
 
-<p>Referenced by <a class="el" href="fclib_8c_source.html#l00829">fclib_delete_global()</a>, and <a class="el" href="fclib_8c_source.html#l00842">fclib_delete_local()</a>.</p>
+<p>Referenced by <a class="el" href="fclib_8c_source.html#l00840">fclib_delete_global()</a>, and <a class="el" href="fclib_8c_source.html#l00853">fclib_delete_local()</a>.</p>
 
 </div>
 </div>
@@ -860,7 +866,7 @@ Here is the call graph for this function:</div>
 
 <p>create and set attributes of tyoe int in info </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00382">382</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00387">387</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, and <a class="el" href="fcint_8h_source.html#l00017">IO</a>.</p>
 
@@ -902,9 +908,9 @@ Here is the call graph for this function:</div>
 
 <p>write global problem; return 1 on success, 0 on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00431">431</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00436">436</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00191">fclib_global::spacedim</a>, <a class="el" href="fclib_8c_source.html#l00156">write_global_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00051">write_matrix()</a>, and <a class="el" href="fclib_8c_source.html#l00237">write_problem_info()</a>.</p>
+<p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00191">fclib_global::spacedim</a>, <a class="el" href="fclib_8c_source.html#l00160">write_global_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00051">write_matrix()</a>, and <a class="el" href="fclib_8c_source.html#l00241">write_problem_info()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -949,9 +955,9 @@ Here is the call graph for this function:</div>
 
 <p>write local problem; return 1 on success, 0 on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00503">503</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00508">508</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8h_source.html#l00243">fclib_local::spacedim</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>, <a class="el" href="fclib_8c_source.html#l00199">write_local_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00051">write_matrix()</a>, and <a class="el" href="fclib_8c_source.html#l00237">write_problem_info()</a>.</p>
+<p>References <a class="el" href="fcint_8h_source.html#l00011">ASSERT</a>, <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8h_source.html#l00243">fclib_local::spacedim</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>, <a class="el" href="fclib_8c_source.html#l00203">write_local_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00051">write_matrix()</a>, and <a class="el" href="fclib_8c_source.html#l00241">write_problem_info()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -996,9 +1002,9 @@ Here is the call graph for this function:</div>
 
 <p>write solution; return 1 on success, 0 on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00571">571</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00576">576</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8c_source.html#l00317">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00282">write_solution()</a>.</p>
+<p>References <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8c_source.html#l00321">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00286">write_solution()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -1048,9 +1054,9 @@ Here is the call graph for this function:</div>
 
 <p>write initial guesses; return 1 on success, 0 on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00611">611</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00616">616</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8c_source.html#l00317">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00282">write_solution()</a>.</p>
+<p>References <a class="el" href="fclib_8c_source.html#l00037">H5Gmake()</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8c_source.html#l00321">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00286">write_solution()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -1084,9 +1090,9 @@ Here is the call graph for this function:</div>
 
 <p>read global problem; return problem on success; NULL on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00661">661</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00666">666</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00180">read_global_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00096">read_matrix()</a>, <a class="el" href="fclib_8c_source.html#l00245">read_problem_info()</a>, and <a class="el" href="fclib_8h_source.html#l00191">fclib_global::spacedim</a>.</p>
+<p>References <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00184">read_global_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00096">read_matrix()</a>, <a class="el" href="fclib_8c_source.html#l00249">read_problem_info()</a>, and <a class="el" href="fclib_8h_source.html#l00191">fclib_global::spacedim</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -1120,9 +1126,9 @@ Here is the call graph for this function:</div>
 
 <p>read local problem; return problem on success; NULL on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00711">711</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00716">716</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8c_source.html#l00220">read_local_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00096">read_matrix()</a>, <a class="el" href="fclib_8c_source.html#l00245">read_problem_info()</a>, <a class="el" href="fclib_8h_source.html#l00243">fclib_local::spacedim</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
+<p>References <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8c_source.html#l00224">read_local_vectors()</a>, <a class="el" href="fclib_8c_source.html#l00096">read_matrix()</a>, <a class="el" href="fclib_8c_source.html#l00249">read_problem_info()</a>, <a class="el" href="fclib_8h_source.html#l00243">fclib_local::spacedim</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -1156,9 +1162,9 @@ Here is the call graph for this function:</div>
 
 <p>read solution; return solution on success; NULL on failure </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00761">761</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00772">772</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00317">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00293">read_solution()</a>.</p>
+<p>References <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00321">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00297">read_solution()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -1201,9 +1207,9 @@ Here is the call graph for this function:</div>
 
 <p>read initial guesses; return vector of guesses on success; NULL on failure; output numebr of guesses in the variable pointed by 'number_of_guesses' </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00789">789</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00800">800</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00317">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00293">read_solution()</a>.</p>
+<p>References <a class="el" href="fcint_8h_source.html#l00017">IO</a>, <a class="el" href="fcint_8h_source.html#l00018">MM</a>, <a class="el" href="fclib_8c_source.html#l00321">read_nvnunrnl()</a>, and <a class="el" href="fclib_8c_source.html#l00297">read_solution()</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -1236,9 +1242,9 @@ Here is the call graph for this function:</div>
 
 <p>delete global problem </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00829">829</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00840">840</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8h_source.html#l00187">fclib_global::b</a>, <a class="el" href="fclib_8c_source.html#l00372">delete_info()</a>, <a class="el" href="fclib_8c_source.html#l00359">delete_matrix()</a>, <a class="el" href="fclib_8h_source.html#l00185">fclib_global::f</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00183">fclib_global::mu</a>, and <a class="el" href="fclib_8h_source.html#l00189">fclib_global::w</a>.</p>
+<p>References <a class="el" href="fclib_8h_source.html#l00187">fclib_global::b</a>, <a class="el" href="fclib_8c_source.html#l00376">delete_info()</a>, <a class="el" href="fclib_8c_source.html#l00363">delete_matrix()</a>, <a class="el" href="fclib_8h_source.html#l00185">fclib_global::f</a>, <a class="el" href="fclib_8h_source.html#l00181">fclib_global::G</a>, <a class="el" href="fclib_8h_source.html#l00179">fclib_global::H</a>, <a class="el" href="fclib_8h_source.html#l00193">fclib_global::info</a>, <a class="el" href="fclib_8h_source.html#l00177">fclib_global::M</a>, <a class="el" href="fclib_8h_source.html#l00183">fclib_global::mu</a>, and <a class="el" href="fclib_8h_source.html#l00189">fclib_global::w</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -1272,9 +1278,9 @@ Here is the call graph for this function:</div>
 
 <p>delete local problem </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00842">842</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00853">853</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
-<p>References <a class="el" href="fclib_8c_source.html#l00372">delete_info()</a>, <a class="el" href="fclib_8c_source.html#l00359">delete_matrix()</a>, <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fclib_8h_source.html#l00237">fclib_local::mu</a>, <a class="el" href="fclib_8h_source.html#l00239">fclib_local::q</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8h_source.html#l00241">fclib_local::s</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
+<p>References <a class="el" href="fclib_8c_source.html#l00376">delete_info()</a>, <a class="el" href="fclib_8c_source.html#l00363">delete_matrix()</a>, <a class="el" href="fclib_8h_source.html#l00245">fclib_local::info</a>, <a class="el" href="fclib_8h_source.html#l00237">fclib_local::mu</a>, <a class="el" href="fclib_8h_source.html#l00239">fclib_local::q</a>, <a class="el" href="fclib_8h_source.html#l00235">fclib_local::R</a>, <a class="el" href="fclib_8h_source.html#l00241">fclib_local::s</a>, <a class="el" href="fclib_8h_source.html#l00233">fclib_local::V</a>, and <a class="el" href="fclib_8h_source.html#l00231">fclib_local::W</a>.</p>
 
 <p>Referenced by <a class="el" href="fctst_8c_source.html#l00400">main()</a>.</p>
 
@@ -1318,7 +1324,7 @@ Here is the call graph for this function:</div>
 
 <p>delete solutions or guesses </p>
 
-<p>Definition at line <a class="el" href="fclib_8c_source.html#l00854">854</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
+<p>Definition at line <a class="el" href="fclib_8c_source.html#l00865">865</a> of file <a class="el" href="fclib_8c_source.html">fclib.c</a>.</p>
 
 <p>References <a class="el" href="fclib_8h_source.html#l00263">fclib_solution::l</a>, <a class="el" href="fclib_8h_source.html#l00261">fclib_solution::r</a>, <a class="el" href="fclib_8h_source.html#l00259">fclib_solution::u</a>, and <a class="el" href="fclib_8h_source.html#l00257">fclib_solution::v</a>.</p>
 
@@ -1345,7 +1351,7 @@ Here is the call graph for this function:</div>
    <div id="footer">
      <div class="address">
        <address>
-	 <small>Generated on Fri Dec 23 2016 18:22:00 for fclib.c File Reference, using&nbsp;
+	 <small>Generated on Fri Dec 23 2016 18:44:01 for fclib.c File Reference, using&nbsp;
 	   <a href="http://www.doxygen.org/index.html">
              <img style="width:54px;height:26px" src="doxygen.png" alt="doxygen" align="middle" border="0"/></a> 1.8.10
 	   Valid <a href="http://validator.w3.org/check?uri=referer" target="_blank" title="Check the XHTML validity of this page.">XHTML</a> &amp;
