@@ -1,0 +1,23 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$fclib_8c.html#a14b1c35f51633d79f4ed6a680d21d6b4" title="delete global problem " alt="" coords="113,57,245,84"/>
+<area shape="rect" id="node6" href="$fclib_8c.html#a20292c502d574d412fd8b41aad37225b" title="delete local problem " alt="" coords="117,7,241,33"/>
+<area shape="rect" id="node7" href="$fclib_8c.html#a4b70826ccf4a67808e1946036ac6d950" title="delete solutions or guesses " alt="" coords="104,112,253,139"/>
+<area shape="rect" id="node8" href="$fclib_8h.html#a148e6f5a5567fc5f2961d48f0652f1b9" title="calculate merit function for a global problem " alt="" coords="116,163,241,189"/>
+<area shape="rect" id="node9" href="$fclib_8h.html#a60a8a78d06e2ba1a2dc5bce40d49113e" title="calculate merit function for a local problem " alt="" coords="120,213,237,240"/>
+<area shape="rect" id="node13" href="$fclib_8c.html#a68650a3ef8e5cfca61e10ede3ff59745" title="read global problem; return problem on success; NULL on failure " alt="" coords="117,272,240,299"/>
+<area shape="rect" id="node17" href="$fclib_8c.html#ad1392d4746f60eb0030d6f9e80846e53" title="read initial guesses; return vector of guesses on success; NULL on failure; output numebr of guesses ..." alt="" coords="110,452,247,479"/>
+<area shape="rect" id="node20" href="$fclib_8c.html#a1122778ddd33ab84360ec6da584bff99" title="read local problem; return problem on success; NULL on failure " alt="" coords="121,324,236,351"/>
+<area shape="rect" id="node22" href="$fclib_8c.html#a038c74114b0d53fd79785d99cd6c42fb" title="read solution; return solution on success; NULL on failure " alt="" coords="112,401,245,428"/>
+<area shape="rect" id="node3" href="$fclib_8c.html#a0b6e96725a6f98fdd3b49cdaea3aa38d" title="delete problem info " alt="" coords="346,5,433,32"/>
+<area shape="rect" id="node4" href="$fclib_8c.html#ab5f8fb6fdbd5d68d93e1b68e8b009581" title="delete matrix " alt="" coords="338,56,441,83"/>
+<area shape="rect" id="node5" href="$fclib_8c.html#ac35480502e8612c3717d5fc6279de0c5" title="delete matrix info " alt="" coords="525,56,656,83"/>
+<area shape="rect" id="node10" href="$fcmer_8c.html#a98e8be3f37690b649f87ba1d48d1bc9c" title="dnrm2" alt="" coords="359,107,419,133"/>
+<area shape="rect" id="node11" href="$fcmer_8c.html#afee93cccfbaff1232c6083249e1a5e7e" title="FrictionContact3D_unitary\l_compute_and_add_error" alt="" coords="301,158,477,199"/>
+<area shape="rect" id="node12" href="$fcmer_8c.html#a2148bd190e300797ee2f81a139ce4f38" title="projectionOnCone" alt="" coords="526,165,655,192"/>
+<area shape="rect" id="node14" href="$fclib_8c.html#a7c692e0eee1727bb5a3033bd2330d81c" title="read global vectors " alt="" coords="318,224,461,251"/>
+<area shape="rect" id="node15" href="$fclib_8c.html#a39c7990d9fd2ab18430feb9814c1e69d" title="read matrix " alt="" coords="343,275,435,301"/>
+<area shape="rect" id="node16" href="$fclib_8c.html#a027ca7a38adea4ea55cd4ad3af71505d" title="read problem info " alt="" coords="323,325,456,352"/>
+<area shape="rect" id="node18" href="$fclib_8c.html#a0da0a5e09f832f89656ad0fe8fc7064d" title="read solution sizes " alt="" coords="336,427,443,453"/>
+<area shape="rect" id="node19" href="$fclib_8c.html#af66ff03f18b03083ea7ad5a9ee9d2021" title="read solution " alt="" coords="338,477,441,504"/>
+<area shape="rect" id="node21" href="$fclib_8c.html#a8bc238e193fcdf7574221d62af6591c2" title="read local vectors " alt="" coords="323,376,456,403"/>
+</map>

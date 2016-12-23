@@ -1,0 +1,5 @@
+<map id="fclib_global" name="fclib_global">
+<area shape="rect" id="node2" href="$structfclib__info.html" title="This structure allows the user to enter a problem information as a title, a short description and kno..." alt="" coords="5,95,80,121"/>
+<area shape="rect" id="node3" href="$structfclib__matrix.html" title="matrix in compressed row/column or triplet form " alt="" coords="105,95,194,121"/>
+<area shape="rect" id="node4" href="$structfclib__matrix__info.html" title="This structure allows the user to enter a description for a given matrix (comment, conditionning, determinant, rank.) if they are known. " alt="" coords="90,5,209,32"/>
+</map>
