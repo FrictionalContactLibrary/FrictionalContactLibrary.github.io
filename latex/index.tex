@@ -4,7 +4,7 @@ F\+C\+L\+I\+B is
 \item A open source collection of Frictional Contact (F\+C) problems stored in a specific \href{http://www.hdfgroup.org/HDF5/}{\tt H\+D\+F5 format } 
 \item A open source light implementation of Input/\+Output functions in C Language to read and write problems  
 \end{DoxyItemize}~\newline
-\hypertarget{index_goals}{}\subsection{Goals of the project}\label{index_goals}
+\hypertarget{index_goals}{}\subsection{Goals of the project (2011-\/2017)}\label{index_goals}
 The goal of this work is to set up a collection of 2\+D and 3\+D Frictional Contact (F\+C) problems in order to
 
 
@@ -14,33 +14,38 @@ The goal of this work is to set up a collection of 2\+D and 3\+D Frictional Cont
 \item share common formulations of problems in order to exchange data 
 \end{DoxyItemize}~\newline
 \hypertarget{index_References}{}\subsection{References}\label{index_References}
-\href{https://hal.inria.fr/hal-00945820v2/document}{\tt Vincent Acary, Maurice Br\'{e}mond, Tomasz Koziara, Franck P\'{e}rignon. F\+C\+L\+I\+B\+: a collection of discrete 3\+D Frictional Contact problems. \mbox{[}Technical Report\mbox{]} R\+T-\/0444, I\+N\+R\+I\+A. 2014, pp.\+34.} ~\newline
-
-
-~\newline
+\href{https://hal.inria.fr/hal-00945820v2/document}{\tt F\+C\+L\+I\+B\+: a collection of discrete 3\+D Frictional Contact problems.} ~\newline
+ Vincent Acary, Maurice Br\'{e}mond, Tomasz Koziara, Franck P\'{e}rignon. \mbox{[}Technical Report\mbox{]} R\+T-\/0444, I\+N\+R\+I\+A. 2014, pp.\+34.~\newline
+ ~\newline
+ \href{https://hal.inria.fr/inria-00423530}{\tt Numerical Methods for Nonsmooth Dynamical Systems\+: Applications in Mechanics and Electronics }~\newline
+ Vincent Acary, Bernard Brogliato~\newline
+ Springer Verlag, 35, pp.\+526, 2008, Lecture Notes in Applied and Computational Mechanics, 978-\/3-\/540-\/75391-\/9 ~\newline
+ ~\newline
  \hypertarget{index_howtodownload}{}\subsection{How to download  ?}\label{index_howtodownload}
-How to download sources files of the A\+P\+I? 
+How to download sources files of the A\+P\+I?
+
+
 \begin{DoxyItemize}
-\item latest version on \href{https://github.com/FrictionalContactLibrary/fclib}{\tt github Frictional\+Contact\+Library/fclib} 
-\item \href{https://github.com/FrictionalContactLibrary/fclib/releases}{\tt releases } 
+\item \href{https://github.com/FrictionalContactLibrary/fclib}{\tt latest version on github} 
+\item \href{https://github.com/FrictionalContactLibrary/fclib/releases}{\tt releases on github } 
 \end{DoxyItemize}
 
 ~\newline
-
+ 
 
 How to download the collection of problems ? 
 \begin{DoxyItemize}
-\item The directory fclib/data/fclib-\/library contains the list of problem files of the library of tests in the file ls-\/\+Rl.\+txt 
+\item The problems are stored on a github repo with the help of git-\/lfs \href{https://github.com/FrictionalContactLibrary/fclib-library}{\tt fclib-\/library }  
+\item The release of the library of problems are tagged and can be found \href{https://github.com/FrictionalContactLibrary/fclib-library/releases}{\tt there }  ~\newline
+ ~\newline
+ 
 
 
-\item The problem files are not stored in the github repository but there\+:  
-\begin{DoxyItemize}
-\item \href{http://faf.gforge.inria.fr/fclib-library/}{\tt Current versions of problems are there }  
-\item \href{http://fclib.gforge.inria.fr/resources/}{\tt Old tagged versions are there } 
-\end{DoxyItemize}
-\item \hyperlink{problems_0_2}{F\+Clib collection v0.\+2}  
-\end{DoxyItemize}see \hyperlink{download}{Download} section for other details ~\newline
-\hypertarget{index_Wahtis}{}\subsection{What is a Frictional contact problem ?}\label{index_Wahtis}
+
+
+
+
+\end{DoxyItemize}\hypertarget{index_Wahtis}{}\subsection{What is a Frictional contact problem ?}\label{index_Wahtis}
 A Frictional contact problem is algebraic problem obtained after possible time and space discretizations of problems of mechanics of solid involving contact and Coulomb\textquotesingle{}s friction. The mathematical structure of the problem is a second-\/order cone complementarity problem. For more details, you could have a look to the \href{doc/FCLib.pdf}{\tt fclib specifications }\hypertarget{index_Localfclib}{}\subsubsection{The local Frictional Contact problem with equality constraints}\label{index_Localfclib}
 Given 
 \begin{DoxyItemize}

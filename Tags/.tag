@@ -948,37 +948,11 @@
     <filename>publications</filename>
   </compound>
   <compound kind="page">
-    <name>problems_0_2</name>
-    <title>FClib collection v0.2</title>
-    <filename>problems_0_2</filename>
-    <docanchor file="problems_0_2" title="Download">DownloadProblems</docanchor>
-  </compound>
-  <compound kind="page">
-    <name>kaplas1</name>
-    <title>Kaplas-1</title>
-    <filename>kaplas1</filename>
-  </compound>
-  <compound kind="page">
-    <name>boxesstack1</name>
-    <title>BoxesStack-1</title>
-    <filename>boxesstack1</filename>
-  </compound>
-  <compound kind="page">
-    <name>chain1</name>
-    <title>Chain-1</title>
-    <filename>chain1</filename>
-  </compound>
-  <compound kind="page">
-    <name>capsules1</name>
-    <title>Capsules-1</title>
-    <filename>capsules1</filename>
-  </compound>
-  <compound kind="page">
     <name>index</name>
     <title>Introduction</title>
     <filename>index</filename>
     <docanchor file="index" title="What is FCLIB ?">whatis</docanchor>
-    <docanchor file="index" title="Goals of the project">goals</docanchor>
+    <docanchor file="index" title="Goals of the project (2011-2017)">goals</docanchor>
     <docanchor file="index">References</docanchor>
     <docanchor file="index" title="How to download  ?">howtodownload</docanchor>
     <docanchor file="index" title="What is a Frictional contact problem ?">Wahtis</docanchor>
