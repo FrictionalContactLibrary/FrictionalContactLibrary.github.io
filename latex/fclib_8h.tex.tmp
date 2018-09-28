@@ -1,0 +1,882 @@
+\hypertarget{fclib_8h}{}\subsection{fclib.\+h File Reference}
+\label{fclib_8h}\index{fclib.\+h@{fclib.\+h}}
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$hdf5.\+h$>$}\newline
+{\ttfamily \#include $<$hdf5\+\_\+hl.\+h$>$}\newline
+Include dependency graph for fclib.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{fclib_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{fclib_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em This structure allows the user to enter a problem information as a title, a short description and known mathematical properties of the problem. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em This structure allows the user to enter a description for a given matrix (comment, conditionning, determinant, rank.) if they are known. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}}
+\begin{DoxyCompactList}\small\item\em matrix in compressed row/column or triplet form \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}}
+\begin{DoxyCompactList}\small\item\em The global frictional contact problem defined by. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}}
+\begin{DoxyCompactList}\small\item\em The local frictional contact problem defined by. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}}
+\begin{DoxyCompactList}\small\item\em A solution or a guess for the frictional contact problem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}}
+\item 
+\#define \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}}~static
+\item 
+\#define \mbox{\hyperlink{fclib_8h_ada04b9d5474ea67cc2ae291ce69bf20a}{F\+C\+L\+I\+B\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\item 
+\#define \mbox{\hyperlink{fclib_8h_ae8ec3114e7970ceac40260041d66edbb}{H5\+Gcreate\+\_\+vers}}~2
+\item 
+\#define \mbox{\hyperlink{fclib_8h_a76c98e4e3ad7bd3a5a480e59f446d20d}{H5\+Gopen\+\_\+vers}}~2
+\item 
+\#define \mbox{\hyperlink{fclib_8h_af6a170071ba1da3930abadc6d3f95493}{A\+S\+S\+E\+RT}}(Test, ...)
+\item 
+\#define \mbox{\hyperlink{fclib_8h_a7e1b7988c998844258179660bb5f8e69}{IO}}(Call)~\mbox{\hyperlink{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}{A\+S\+S\+E\+RT}} ((Call) $>$= 0, \char`\"{}E\+R\+R\+O\+R\+: H\+D\+F5 call failed\char`\"{})
+\item 
+\#define \mbox{\hyperlink{fclib_8h_ae5d192dca25b682622b72b1211df96b7}{MM}}(Call)~\mbox{\hyperlink{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}{A\+S\+S\+E\+RT}} ((Call), \char`\"{}E\+R\+R\+O\+R\+: out of memory\char`\"{})
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_a1c391873bdb89a027994aee2bb1a4a96}{fclib\+\_\+write\+\_\+global}} (struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$problem, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em write global problem; return 1 on success, 0 on failure \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_af677eb602798365817795e7569920422}{fclib\+\_\+write\+\_\+local}} (struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$problem, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em write local problem; return 1 on success, 0 on failure \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_aa6df56d82f6b9c660549f6a7cd3bedb0}{fclib\+\_\+write\+\_\+solution}} (struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$solution, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em write solution; return 1 on success, 0 on failure \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_ad46dea243a4495f1ad8a26c7657d3a9c}{fclib\+\_\+write\+\_\+guesses}} (int number\+\_\+of\+\_\+guesses, struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$guesses, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em write initial guesses; return 1 on success, 0 on failure \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$ \mbox{\hyperlink{fclib_8h_a9f7b9d5cad87df0920516592ee0aae2a}{fclib\+\_\+read\+\_\+global}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em read global problem; return problem on success; N\+U\+LL on failure \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$ \mbox{\hyperlink{fclib_8h_ac822adc404300eebf5378c643ff2ae08}{fclib\+\_\+read\+\_\+local}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em read local problem; return problem on success; N\+U\+LL on failure \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$ \mbox{\hyperlink{fclib_8h_a912678a831b9839cf78e1d47fbfb7255}{fclib\+\_\+read\+\_\+solution}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em read solution; return solution on success; N\+U\+LL on failure \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$ \mbox{\hyperlink{fclib_8h_aadf625dc10b2e3e02015a287d73963b0}{fclib\+\_\+read\+\_\+guesses}} (const char $\ast$path, int $\ast$number\+\_\+of\+\_\+guesses)
+\begin{DoxyCompactList}\small\item\em read initial guesses; return vector of guesses on success; N\+U\+LL on failure; output number of guesses in the variable pointed by \textquotesingle{}number\+\_\+of\+\_\+guesses\textquotesingle{} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_a341a5ea57977b0d746fb094a6ce871e8}{fclib\+\_\+delete\+\_\+global}} (struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$problem)
+\begin{DoxyCompactList}\small\item\em delete global problem \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_a8e8f4b58c9992dccfa27e5550df209aa}{fclib\+\_\+delete\+\_\+local}} (struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$problem)
+\begin{DoxyCompactList}\small\item\em delete local problem \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_a27450e3afac2ee39b4521a27100a15ec}{fclib\+\_\+delete\+\_\+solutions}} (struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$data, int count)
+\begin{DoxyCompactList}\small\item\em delete solutions or guesses \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_a046fabc2688f6228ddcf861ab3de40be}{fclib\+\_\+create\+\_\+int\+\_\+attributes\+\_\+in\+\_\+info}} (const char $\ast$path, const char $\ast$attr\+\_\+name, int attr\+\_\+value)
+\begin{DoxyCompactList}\small\item\em create and set attributes of tyoe int in info \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} hid\+\_\+t \mbox{\hyperlink{fclib_8h_a4af9c6a6525fa117fd4573ca3d6dce2e}{H5\+Gmake}} (hid\+\_\+t loc\+\_\+id, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em make group \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_a01e38ad037cd4b30eb8d1657a1602200}{write\+\_\+matrix}} (hid\+\_\+t id, struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$mat)
+\begin{DoxyCompactList}\small\item\em write matrix \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$ \mbox{\hyperlink{fclib_8h_a5cbb9dcf7a97a711f1f568a2434b1504}{read\+\_\+matrix}} (hid\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em read matrix \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_aef429cae16687b7bb91a08e5e008b862}{write\+\_\+global\+\_\+vectors}} (hid\+\_\+t id, struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$problem)
+\begin{DoxyCompactList}\small\item\em write global vectors \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_aea9033a9a8e3a46f3e60360b27919e47}{read\+\_\+global\+\_\+vectors}} (hid\+\_\+t id, struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$problem)
+\begin{DoxyCompactList}\small\item\em read global vectors \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_a0b5694e85730f32079c9d8b49a38aff6}{write\+\_\+local\+\_\+vectors}} (hid\+\_\+t id, struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$problem)
+\begin{DoxyCompactList}\small\item\em write local vectors \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_a5665ba234518352bb97aac03bfe0efef}{read\+\_\+local\+\_\+vectors}} (hid\+\_\+t id, struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$problem)
+\begin{DoxyCompactList}\small\item\em read local vectors \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_a3da0efccf168aa02bf11dca34c838487}{write\+\_\+problem\+\_\+info}} (hid\+\_\+t id, struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}} $\ast$info)
+\begin{DoxyCompactList}\small\item\em write problem info \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}} $\ast$ \mbox{\hyperlink{fclib_8h_ad90c7b6b28634ad42911fd0b380da541}{read\+\_\+problem\+\_\+info}} (hid\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em read problem info \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_a1ef46fed17c8448bf63f11ae6756d0de}{write\+\_\+solution}} (hid\+\_\+t id, struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$solution, hsize\+\_\+t nv, hsize\+\_\+t nr, hsize\+\_\+t nl)
+\begin{DoxyCompactList}\small\item\em write solution \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_a75c2ead97e9d12f48eaf8b1f3b851738}{read\+\_\+solution}} (hid\+\_\+t id, hsize\+\_\+t nv, hsize\+\_\+t nr, hsize\+\_\+t nl, struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$solution)
+\begin{DoxyCompactList}\small\item\em read solution \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_ae7cbd3c281953eef55e58f5e84118279}{read\+\_\+nvnunrnl}} (hid\+\_\+t file\+\_\+id, int $\ast$nv, int $\ast$nr, int $\ast$nl)
+\begin{DoxyCompactList}\small\item\em read solution sizes \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_a404cf56c1179ab7142097022deaec14d}{delete\+\_\+matrix\+\_\+info}} (struct \mbox{\hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info}} $\ast$info)
+\begin{DoxyCompactList}\small\item\em delete matrix info \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_ac5e23d3dda5397f44d42053942eb2cc1}{delete\+\_\+matrix}} (struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$mat)
+\begin{DoxyCompactList}\small\item\em delete matrix \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_ae0e70529fd92b8355068d75ffe7bcbe9}{delete\+\_\+info}} (struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}} $\ast$info)
+\begin{DoxyCompactList}\small\item\em delete problem info \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} \mbox{\hyperlink{fclib_8h_abaf169dc4591afe910aca1cbede2229a}{fclib\+\_\+merit}}
+\item 
+\mbox{\hyperlink{fclib_8h_a61b8c09ca1a9b0c41a2a9e825dfdd6eb}{M\+E\+R\+I\+T\+\_\+1}}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+
+
+ \paragraph*{frictional contact library interface }
+
+This C A\+PI provides functions to read and write Frictional contact problems in H\+D\+F5 format Two kind of problem are considered Given 
+\begin{DoxyItemize}
+\item a symmetric positive semi--definite matrix ${W} \in {\mathrm{I\!R}}^{m \times m} $  
+\item a vector $ {q} \in {\mathrm{I\!R}}^m$ 
+\item a vector of coefficients of friction $\mu \in{\mathrm{I\!R}}^{n_c}$ 
+\end{DoxyItemize}the local FC problem is to find two vectors $u\in{\ensuremath{\mathrm{I\!R}}}^m$, the relative local velocity and $r\in {\ensuremath{\mathrm{I\!R}}}^m$, the contact forces denoted by $\mathrm{FC}(W,q,\mu)$ such that \begin{eqnarray*} \begin{cases} \hat u = W r + q +\left[ \left[\begin{array}{c} \mu^\alpha \|u^\alpha_T\|\ \ 0 \ \ 0 \end{array}\right]^T, \alpha = 1 \ldots n_c \right]^T \\ \ \ C^\star_{\mu} \ni {\hat u} \perp r \in C_{\mu} \end{cases} \end{eqnarray*} where the Coulomb friction cone for a contact $\alpha$ is defined by \begin{eqnarray*} \label{eq:CCC} C_{\mu^\alpha}^{\alpha} = \{r^\alpha, \|r^\alpha_T \| \leq \mu^\alpha |r^\alpha_N| \} *\end{eqnarray*} and the set $C^{\alpha,\star}_{\mu^\alpha}$ is its dual. We are also dealing with global FC problem defined by Given 
+\begin{DoxyItemize}
+\item a symmetric positive definite matrix ${M} \in {\mathrm{I\!R}}^{n \times n}$ 
+\item a vector $ {f} \in {\mathrm{I\!R}}^n$, 
+\item a matrix ${H} \in {\mathrm{I\!R}}^{n \times m}$ 
+\item a matrix ${G} \in {\mathrm{I\!R}}^{n \times p}$ 
+\item a vector $w \in {\mathrm{I\!R}}^{m}$, 
+\item a vector $b \in {\mathrm{I\!R}}^{p}$, 
+\item a vector of coefficients of friction $\mu \in {\mathrm{I\!R}}^{n_c}$ 
+\end{DoxyItemize}the Global Mixed 3\+D\+FC problem is to find four vectors $ {v} \in {\mathrm{I\!R}}^n$, $u\in{\mathrm{I\!R}}^m$, $r\in {\mathrm{I\!R}}^m$ and $\lambda \in {\mathrm{I\!R}}^p$ denoted by $\mathrm{GM3DFC}(M,H,G,w,b,\mu)$ such that \begin{eqnarray*} \begin{cases} M v = {H} {r} + G\lambda + {f} \\ \ \ G^T v +b =0 \\ \ \ \hat u = H^T v + w +\left[ \left[\begin{array}{c} \mu \|u^\alpha_T\|\ \ 0 \ \ 0 \end{array}\right]^T, \alpha = 1 \ldots n_c \right]^T \\ \ \ C^\star_{\mu} \ni {\hat u} \perp r \in C_{\mu} \end{cases} \end{eqnarray*} 
+
+\subsubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}\label{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}} 
+\index{fclib.\+h@{fclib.\+h}!F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE@{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}}
+\index{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE@{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}{FCLIB\_APICOMPILE}}
+{\footnotesize\ttfamily \#define F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}
+
+
+
+Definition at line 91 of file fclib.\+h.
+
+\mbox{\Hypertarget{fclib_8h_a39884ed51fb89354fd625364cd090da2}\label{fclib_8h_a39884ed51fb89354fd625364cd090da2}} 
+\index{fclib.\+h@{fclib.\+h}!F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC@{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}}
+\index{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC@{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}{FCLIB\_STATIC}}
+{\footnotesize\ttfamily \#define F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC~static}
+
+
+
+Definition at line 96 of file fclib.\+h.
+
+\mbox{\Hypertarget{fclib_8h_ada04b9d5474ea67cc2ae291ce69bf20a}\label{fclib_8h_ada04b9d5474ea67cc2ae291ce69bf20a}} 
+\index{fclib.\+h@{fclib.\+h}!F\+C\+L\+I\+B\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON@{F\+C\+L\+I\+B\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\index{F\+C\+L\+I\+B\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON@{F\+C\+L\+I\+B\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{F\+C\+L\+I\+B\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}{FCLIB\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define F\+C\+L\+I\+B\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+
+
+Definition at line 97 of file fclib.\+h.
+
+\mbox{\Hypertarget{fclib_8h_ae8ec3114e7970ceac40260041d66edbb}\label{fclib_8h_ae8ec3114e7970ceac40260041d66edbb}} 
+\index{fclib.\+h@{fclib.\+h}!H5\+Gcreate\+\_\+vers@{H5\+Gcreate\+\_\+vers}}
+\index{H5\+Gcreate\+\_\+vers@{H5\+Gcreate\+\_\+vers}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{H5\+Gcreate\+\_\+vers}{H5Gcreate\_vers}}
+{\footnotesize\ttfamily \#define H5\+Gcreate\+\_\+vers~2}
+
+
+
+Definition at line 103 of file fclib.\+h.
+
+\mbox{\Hypertarget{fclib_8h_a76c98e4e3ad7bd3a5a480e59f446d20d}\label{fclib_8h_a76c98e4e3ad7bd3a5a480e59f446d20d}} 
+\index{fclib.\+h@{fclib.\+h}!H5\+Gopen\+\_\+vers@{H5\+Gopen\+\_\+vers}}
+\index{H5\+Gopen\+\_\+vers@{H5\+Gopen\+\_\+vers}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{H5\+Gopen\+\_\+vers}{H5Gopen\_vers}}
+{\footnotesize\ttfamily \#define H5\+Gopen\+\_\+vers~2}
+
+
+
+Definition at line 104 of file fclib.\+h.
+
+\mbox{\Hypertarget{fclib_8h_af6a170071ba1da3930abadc6d3f95493}\label{fclib_8h_af6a170071ba1da3930abadc6d3f95493}} 
+\index{fclib.\+h@{fclib.\+h}!A\+S\+S\+E\+RT@{A\+S\+S\+E\+RT}}
+\index{A\+S\+S\+E\+RT@{A\+S\+S\+E\+RT}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{A\+S\+S\+E\+RT}{ASSERT}}
+{\footnotesize\ttfamily \#define A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{Test,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+  if (! (Test)) \{ fprintf (stderr, \textcolor{stringliteral}{"%s: %d => "}, \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)
+    fprintf (stderr, \_\_VA\_ARGS\_\_);\(\backslash\)
+    fprintf (stderr, \textcolor{stringliteral}{"\(\backslash\)n"}); exit (1); \} \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+
+
+Definition at line 370 of file fclib.\+h.
+
+
+
+Referenced by fclib\+\_\+write\+\_\+global(), fclib\+\_\+write\+\_\+local(), read\+\_\+global\+\_\+vectors(), read\+\_\+local\+\_\+vectors(), read\+\_\+matrix(), read\+\_\+solution(), write\+\_\+global\+\_\+vectors(), write\+\_\+local\+\_\+vectors(), write\+\_\+matrix(), and write\+\_\+solution().
+
+\mbox{\Hypertarget{fclib_8h_a7e1b7988c998844258179660bb5f8e69}\label{fclib_8h_a7e1b7988c998844258179660bb5f8e69}} 
+\index{fclib.\+h@{fclib.\+h}!IO@{IO}}
+\index{IO@{IO}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{IO}{IO}}
+{\footnotesize\ttfamily \#define IO(\begin{DoxyParamCaption}\item[{}]{Call }\end{DoxyParamCaption})~\mbox{\hyperlink{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}{A\+S\+S\+E\+RT}} ((Call) $>$= 0, \char`\"{}E\+R\+R\+O\+R\+: H\+D\+F5 call failed\char`\"{})}
+
+
+
+Definition at line 376 of file fclib.\+h.
+
+
+
+Referenced by fclib\+\_\+create\+\_\+int\+\_\+attributes\+\_\+in\+\_\+info(), fclib\+\_\+read\+\_\+global(), fclib\+\_\+read\+\_\+guesses(), fclib\+\_\+read\+\_\+local(), fclib\+\_\+read\+\_\+solution(), fclib\+\_\+write\+\_\+global(), fclib\+\_\+write\+\_\+guesses(), fclib\+\_\+write\+\_\+local(), fclib\+\_\+write\+\_\+solution(), read\+\_\+global\+\_\+vectors(), read\+\_\+local\+\_\+vectors(), read\+\_\+matrix(), read\+\_\+nvnunrnl(), read\+\_\+problem\+\_\+info(), read\+\_\+solution(), write\+\_\+global\+\_\+vectors(), write\+\_\+local\+\_\+vectors(), write\+\_\+matrix(), write\+\_\+problem\+\_\+info(), and write\+\_\+solution().
+
+\mbox{\Hypertarget{fclib_8h_ae5d192dca25b682622b72b1211df96b7}\label{fclib_8h_ae5d192dca25b682622b72b1211df96b7}} 
+\index{fclib.\+h@{fclib.\+h}!MM@{MM}}
+\index{MM@{MM}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{MM}{MM}}
+{\footnotesize\ttfamily \#define MM(\begin{DoxyParamCaption}\item[{}]{Call }\end{DoxyParamCaption})~\mbox{\hyperlink{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}{A\+S\+S\+E\+RT}} ((Call), \char`\"{}E\+R\+R\+O\+R\+: out of memory\char`\"{})}
+
+
+
+Definition at line 377 of file fclib.\+h.
+
+
+
+Referenced by fclib\+\_\+read\+\_\+global(), fclib\+\_\+read\+\_\+guesses(), fclib\+\_\+read\+\_\+local(), fclib\+\_\+read\+\_\+solution(), read\+\_\+global\+\_\+vectors(), read\+\_\+local\+\_\+vectors(), read\+\_\+matrix(), read\+\_\+problem\+\_\+info(), and read\+\_\+solution().
+
+
+
+\subsubsection{Function Documentation}
+\mbox{\Hypertarget{fclib_8h_a1c391873bdb89a027994aee2bb1a4a96}\label{fclib_8h_a1c391873bdb89a027994aee2bb1a4a96}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+write\+\_\+global@{fclib\+\_\+write\+\_\+global}}
+\index{fclib\+\_\+write\+\_\+global@{fclib\+\_\+write\+\_\+global}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+write\+\_\+global()}{fclib\_write\_global()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} fclib\+\_\+write\+\_\+global (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$}]{problem,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+write global problem; return 1 on success, 0 on failure 
+
+
+
+Definition at line 781 of file fclib.\+h.
+
+
+
+References A\+S\+S\+E\+RT, fclib\+\_\+global\+::G, fclib\+\_\+global\+::H, H5\+Gmake(), fclib\+\_\+global\+::info, IO, fclib\+\_\+global\+::M, fclib\+\_\+global\+::spacedim, write\+\_\+global\+\_\+vectors(), write\+\_\+matrix(), and write\+\_\+problem\+\_\+info().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{fclib_8h_af677eb602798365817795e7569920422}\label{fclib_8h_af677eb602798365817795e7569920422}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+write\+\_\+local@{fclib\+\_\+write\+\_\+local}}
+\index{fclib\+\_\+write\+\_\+local@{fclib\+\_\+write\+\_\+local}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+write\+\_\+local()}{fclib\_write\_local()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} fclib\+\_\+write\+\_\+local (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$}]{problem,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+write local problem; return 1 on success, 0 on failure 
+
+
+
+Definition at line 853 of file fclib.\+h.
+
+
+
+References A\+S\+S\+E\+RT, H5\+Gmake(), fclib\+\_\+local\+::info, IO, fclib\+\_\+local\+::R, fclib\+\_\+local\+::spacedim, fclib\+\_\+local\+::V, fclib\+\_\+local\+::W, write\+\_\+local\+\_\+vectors(), write\+\_\+matrix(), and write\+\_\+problem\+\_\+info().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{fclib_8h_aa6df56d82f6b9c660549f6a7cd3bedb0}\label{fclib_8h_aa6df56d82f6b9c660549f6a7cd3bedb0}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+write\+\_\+solution@{fclib\+\_\+write\+\_\+solution}}
+\index{fclib\+\_\+write\+\_\+solution@{fclib\+\_\+write\+\_\+solution}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+write\+\_\+solution()}{fclib\_write\_solution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} fclib\+\_\+write\+\_\+solution (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$}]{solution,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+write solution; return 1 on success, 0 on failure 
+
+
+
+Definition at line 921 of file fclib.\+h.
+
+
+
+References H5\+Gmake(), IO, read\+\_\+nvnunrnl(), and write\+\_\+solution().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{fclib_8h_ad46dea243a4495f1ad8a26c7657d3a9c}\label{fclib_8h_ad46dea243a4495f1ad8a26c7657d3a9c}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+write\+\_\+guesses@{fclib\+\_\+write\+\_\+guesses}}
+\index{fclib\+\_\+write\+\_\+guesses@{fclib\+\_\+write\+\_\+guesses}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+write\+\_\+guesses()}{fclib\_write\_guesses()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} fclib\+\_\+write\+\_\+guesses (\begin{DoxyParamCaption}\item[{int}]{number\+\_\+of\+\_\+guesses,  }\item[{struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$}]{guesses,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+write initial guesses; return 1 on success, 0 on failure 
+
+
+
+Definition at line 961 of file fclib.\+h.
+
+
+
+References H5\+Gmake(), IO, read\+\_\+nvnunrnl(), and write\+\_\+solution().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{fclib_8h_a9f7b9d5cad87df0920516592ee0aae2a}\label{fclib_8h_a9f7b9d5cad87df0920516592ee0aae2a}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+read\+\_\+global@{fclib\+\_\+read\+\_\+global}}
+\index{fclib\+\_\+read\+\_\+global@{fclib\+\_\+read\+\_\+global}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+read\+\_\+global()}{fclib\_read\_global()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$ fclib\+\_\+read\+\_\+global (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+read global problem; return problem on success; N\+U\+LL on failure 
+
+
+
+Definition at line 1011 of file fclib.\+h.
+
+
+
+References fclib\+\_\+global\+::G, fclib\+\_\+global\+::H, fclib\+\_\+global\+::info, IO, fclib\+\_\+global\+::M, MM, read\+\_\+global\+\_\+vectors(), read\+\_\+matrix(), read\+\_\+problem\+\_\+info(), and fclib\+\_\+global\+::spacedim.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{fclib_8h_ac822adc404300eebf5378c643ff2ae08}\label{fclib_8h_ac822adc404300eebf5378c643ff2ae08}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+read\+\_\+local@{fclib\+\_\+read\+\_\+local}}
+\index{fclib\+\_\+read\+\_\+local@{fclib\+\_\+read\+\_\+local}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+read\+\_\+local()}{fclib\_read\_local()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$ fclib\+\_\+read\+\_\+local (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+read local problem; return problem on success; N\+U\+LL on failure 
+
+
+
+Definition at line 1061 of file fclib.\+h.
+
+
+
+References fclib\+\_\+local\+::info, IO, MM, fclib\+\_\+local\+::R, read\+\_\+local\+\_\+vectors(), read\+\_\+matrix(), read\+\_\+problem\+\_\+info(), fclib\+\_\+local\+::spacedim, fclib\+\_\+local\+::V, and fclib\+\_\+local\+::W.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{fclib_8h_a912678a831b9839cf78e1d47fbfb7255}\label{fclib_8h_a912678a831b9839cf78e1d47fbfb7255}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+read\+\_\+solution@{fclib\+\_\+read\+\_\+solution}}
+\index{fclib\+\_\+read\+\_\+solution@{fclib\+\_\+read\+\_\+solution}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+read\+\_\+solution()}{fclib\_read\_solution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$ fclib\+\_\+read\+\_\+solution (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+read solution; return solution on success; N\+U\+LL on failure 
+
+
+
+Definition at line 1117 of file fclib.\+h.
+
+
+
+References IO, MM, read\+\_\+nvnunrnl(), and read\+\_\+solution().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{fclib_8h_aadf625dc10b2e3e02015a287d73963b0}\label{fclib_8h_aadf625dc10b2e3e02015a287d73963b0}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+read\+\_\+guesses@{fclib\+\_\+read\+\_\+guesses}}
+\index{fclib\+\_\+read\+\_\+guesses@{fclib\+\_\+read\+\_\+guesses}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+read\+\_\+guesses()}{fclib\_read\_guesses()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$ fclib\+\_\+read\+\_\+guesses (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{int $\ast$}]{number\+\_\+of\+\_\+guesses }\end{DoxyParamCaption})}
+
+
+
+read initial guesses; return vector of guesses on success; N\+U\+LL on failure; output number of guesses in the variable pointed by \textquotesingle{}number\+\_\+of\+\_\+guesses\textquotesingle{} 
+
+read initial guesses; return vector of guesses on success; N\+U\+LL on failure; output numebr of guesses in the variable pointed by \textquotesingle{}number\+\_\+of\+\_\+guesses\textquotesingle{} 
+
+Definition at line 1145 of file fclib.\+h.
+
+
+
+References IO, MM, read\+\_\+nvnunrnl(), and read\+\_\+solution().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{fclib_8h_a341a5ea57977b0d746fb094a6ce871e8}\label{fclib_8h_a341a5ea57977b0d746fb094a6ce871e8}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+delete\+\_\+global@{fclib\+\_\+delete\+\_\+global}}
+\index{fclib\+\_\+delete\+\_\+global@{fclib\+\_\+delete\+\_\+global}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+delete\+\_\+global()}{fclib\_delete\_global()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} fclib\+\_\+delete\+\_\+global (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$}]{problem }\end{DoxyParamCaption})}
+
+
+
+delete global problem 
+
+
+
+Definition at line 1185 of file fclib.\+h.
+
+
+
+References fclib\+\_\+global\+::b, delete\+\_\+info(), delete\+\_\+matrix(), fclib\+\_\+global\+::f, fclib\+\_\+global\+::G, fclib\+\_\+global\+::H, fclib\+\_\+global\+::info, fclib\+\_\+global\+::M, fclib\+\_\+global\+::mu, and fclib\+\_\+global\+::w.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{fclib_8h_a8e8f4b58c9992dccfa27e5550df209aa}\label{fclib_8h_a8e8f4b58c9992dccfa27e5550df209aa}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+delete\+\_\+local@{fclib\+\_\+delete\+\_\+local}}
+\index{fclib\+\_\+delete\+\_\+local@{fclib\+\_\+delete\+\_\+local}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+delete\+\_\+local()}{fclib\_delete\_local()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} fclib\+\_\+delete\+\_\+local (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$}]{problem }\end{DoxyParamCaption})}
+
+
+
+delete local problem 
+
+
+
+Definition at line 1198 of file fclib.\+h.
+
+
+
+References delete\+\_\+info(), delete\+\_\+matrix(), fclib\+\_\+local\+::info, fclib\+\_\+local\+::mu, fclib\+\_\+local\+::q, fclib\+\_\+local\+::R, fclib\+\_\+local\+::s, fclib\+\_\+local\+::V, and fclib\+\_\+local\+::W.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{fclib_8h_a27450e3afac2ee39b4521a27100a15ec}\label{fclib_8h_a27450e3afac2ee39b4521a27100a15ec}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+delete\+\_\+solutions@{fclib\+\_\+delete\+\_\+solutions}}
+\index{fclib\+\_\+delete\+\_\+solutions@{fclib\+\_\+delete\+\_\+solutions}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+delete\+\_\+solutions()}{fclib\_delete\_solutions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} fclib\+\_\+delete\+\_\+solutions (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$}]{data,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+delete solutions or guesses 
+
+
+
+Definition at line 1210 of file fclib.\+h.
+
+
+
+References fclib\+\_\+solution\+::l, fclib\+\_\+solution\+::r, fclib\+\_\+solution\+::u, and fclib\+\_\+solution\+::v.
+
+
+
+Referenced by main().
+
+\mbox{\Hypertarget{fclib_8h_a046fabc2688f6228ddcf861ab3de40be}\label{fclib_8h_a046fabc2688f6228ddcf861ab3de40be}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+create\+\_\+int\+\_\+attributes\+\_\+in\+\_\+info@{fclib\+\_\+create\+\_\+int\+\_\+attributes\+\_\+in\+\_\+info}}
+\index{fclib\+\_\+create\+\_\+int\+\_\+attributes\+\_\+in\+\_\+info@{fclib\+\_\+create\+\_\+int\+\_\+attributes\+\_\+in\+\_\+info}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+create\+\_\+int\+\_\+attributes\+\_\+in\+\_\+info()}{fclib\_create\_int\_attributes\_in\_info()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} fclib\+\_\+create\+\_\+int\+\_\+attributes\+\_\+in\+\_\+info (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{const char $\ast$}]{attr\+\_\+name,  }\item[{int}]{attr\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+create and set attributes of tyoe int in info 
+
+
+
+Definition at line 732 of file fclib.\+h.
+
+
+
+References H5\+Gmake(), and IO.
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{fclib_8h_a4af9c6a6525fa117fd4573ca3d6dce2e}\label{fclib_8h_a4af9c6a6525fa117fd4573ca3d6dce2e}} 
+\index{fclib.\+h@{fclib.\+h}!H5\+Gmake@{H5\+Gmake}}
+\index{H5\+Gmake@{H5\+Gmake}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{H5\+Gmake()}{H5Gmake()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} hid\+\_\+t H5\+Gmake (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{loc\+\_\+id,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+make group 
+
+
+
+Definition at line 381 of file fclib.\+h.
+
+
+
+Referenced by fclib\+\_\+create\+\_\+int\+\_\+attributes\+\_\+in\+\_\+info(), fclib\+\_\+write\+\_\+global(), fclib\+\_\+write\+\_\+guesses(), fclib\+\_\+write\+\_\+local(), and fclib\+\_\+write\+\_\+solution().
+
+\mbox{\Hypertarget{fclib_8h_a01e38ad037cd4b30eb8d1657a1602200}\label{fclib_8h_a01e38ad037cd4b30eb8d1657a1602200}} 
+\index{fclib.\+h@{fclib.\+h}!write\+\_\+matrix@{write\+\_\+matrix}}
+\index{write\+\_\+matrix@{write\+\_\+matrix}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{write\+\_\+matrix()}{write\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void write\+\_\+matrix (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{id,  }\item[{struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+
+
+write matrix 
+
+
+
+Definition at line 396 of file fclib.\+h.
+
+
+
+References A\+S\+S\+E\+RT, fclib\+\_\+matrix\+\_\+info\+::comment, fclib\+\_\+matrix\+\_\+info\+::conditioning, fclib\+\_\+matrix\+\_\+info\+::determinant, fclib\+\_\+matrix\+::i, fclib\+\_\+matrix\+::info, IO, fclib\+\_\+matrix\+::m, fclib\+\_\+matrix\+::n, fclib\+\_\+matrix\+::nz, fclib\+\_\+matrix\+::nzmax, fclib\+\_\+matrix\+::p, fclib\+\_\+matrix\+\_\+info\+::rank, and fclib\+\_\+matrix\+::x.
+
+
+
+Referenced by fclib\+\_\+write\+\_\+global(), and fclib\+\_\+write\+\_\+local().
+
+\mbox{\Hypertarget{fclib_8h_a5cbb9dcf7a97a711f1f568a2434b1504}\label{fclib_8h_a5cbb9dcf7a97a711f1f568a2434b1504}} 
+\index{fclib.\+h@{fclib.\+h}!read\+\_\+matrix@{read\+\_\+matrix}}
+\index{read\+\_\+matrix@{read\+\_\+matrix}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{read\+\_\+matrix()}{read\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}}$\ast$ read\+\_\+matrix (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{id }\end{DoxyParamCaption})}
+
+
+
+read matrix 
+
+
+
+Definition at line 441 of file fclib.\+h.
+
+
+
+References A\+S\+S\+E\+RT, fclib\+\_\+matrix\+\_\+info\+::comment, fclib\+\_\+matrix\+\_\+info\+::conditioning, fclib\+\_\+matrix\+\_\+info\+::determinant, fclib\+\_\+matrix\+::i, fclib\+\_\+matrix\+::info, IO, fclib\+\_\+matrix\+::m, MM, fclib\+\_\+matrix\+::n, fclib\+\_\+matrix\+::nz, fclib\+\_\+matrix\+::nzmax, fclib\+\_\+matrix\+::p, fclib\+\_\+matrix\+\_\+info\+::rank, and fclib\+\_\+matrix\+::x.
+
+
+
+Referenced by fclib\+\_\+read\+\_\+global(), and fclib\+\_\+read\+\_\+local().
+
+\mbox{\Hypertarget{fclib_8h_aef429cae16687b7bb91a08e5e008b862}\label{fclib_8h_aef429cae16687b7bb91a08e5e008b862}} 
+\index{fclib.\+h@{fclib.\+h}!write\+\_\+global\+\_\+vectors@{write\+\_\+global\+\_\+vectors}}
+\index{write\+\_\+global\+\_\+vectors@{write\+\_\+global\+\_\+vectors}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{write\+\_\+global\+\_\+vectors()}{write\_global\_vectors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void write\+\_\+global\+\_\+vectors (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{id,  }\item[{struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$}]{problem }\end{DoxyParamCaption})}
+
+
+
+write global vectors 
+
+
+
+Definition at line 505 of file fclib.\+h.
+
+
+
+References A\+S\+S\+E\+RT, fclib\+\_\+global\+::b, fclib\+\_\+global\+::f, fclib\+\_\+global\+::G, fclib\+\_\+global\+::H, IO, fclib\+\_\+matrix\+::m, fclib\+\_\+global\+::M, fclib\+\_\+global\+::mu, fclib\+\_\+matrix\+::n, fclib\+\_\+global\+::spacedim, and fclib\+\_\+global\+::w.
+
+
+
+Referenced by fclib\+\_\+write\+\_\+global().
+
+\mbox{\Hypertarget{fclib_8h_aea9033a9a8e3a46f3e60360b27919e47}\label{fclib_8h_aea9033a9a8e3a46f3e60360b27919e47}} 
+\index{fclib.\+h@{fclib.\+h}!read\+\_\+global\+\_\+vectors@{read\+\_\+global\+\_\+vectors}}
+\index{read\+\_\+global\+\_\+vectors@{read\+\_\+global\+\_\+vectors}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{read\+\_\+global\+\_\+vectors()}{read\_global\_vectors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void read\+\_\+global\+\_\+vectors (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{id,  }\item[{struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$}]{problem }\end{DoxyParamCaption})}
+
+
+
+read global vectors 
+
+
+
+Definition at line 529 of file fclib.\+h.
+
+
+
+References A\+S\+S\+E\+RT, fclib\+\_\+global\+::b, fclib\+\_\+global\+::f, fclib\+\_\+global\+::G, fclib\+\_\+global\+::H, IO, fclib\+\_\+matrix\+::m, fclib\+\_\+global\+::M, MM, fclib\+\_\+global\+::mu, fclib\+\_\+matrix\+::n, fclib\+\_\+global\+::spacedim, and fclib\+\_\+global\+::w.
+
+
+
+Referenced by fclib\+\_\+read\+\_\+global().
+
+\mbox{\Hypertarget{fclib_8h_a0b5694e85730f32079c9d8b49a38aff6}\label{fclib_8h_a0b5694e85730f32079c9d8b49a38aff6}} 
+\index{fclib.\+h@{fclib.\+h}!write\+\_\+local\+\_\+vectors@{write\+\_\+local\+\_\+vectors}}
+\index{write\+\_\+local\+\_\+vectors@{write\+\_\+local\+\_\+vectors}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{write\+\_\+local\+\_\+vectors()}{write\_local\_vectors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void write\+\_\+local\+\_\+vectors (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{id,  }\item[{struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$}]{problem }\end{DoxyParamCaption})}
+
+
+
+write local vectors 
+
+
+
+Definition at line 548 of file fclib.\+h.
+
+
+
+References A\+S\+S\+E\+RT, IO, fclib\+\_\+matrix\+::m, fclib\+\_\+local\+::mu, fclib\+\_\+local\+::q, fclib\+\_\+local\+::R, fclib\+\_\+local\+::s, fclib\+\_\+local\+::spacedim, fclib\+\_\+local\+::V, and fclib\+\_\+local\+::W.
+
+
+
+Referenced by fclib\+\_\+write\+\_\+local().
+
+\mbox{\Hypertarget{fclib_8h_a5665ba234518352bb97aac03bfe0efef}\label{fclib_8h_a5665ba234518352bb97aac03bfe0efef}} 
+\index{fclib.\+h@{fclib.\+h}!read\+\_\+local\+\_\+vectors@{read\+\_\+local\+\_\+vectors}}
+\index{read\+\_\+local\+\_\+vectors@{read\+\_\+local\+\_\+vectors}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{read\+\_\+local\+\_\+vectors()}{read\_local\_vectors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void read\+\_\+local\+\_\+vectors (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{id,  }\item[{struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$}]{problem }\end{DoxyParamCaption})}
+
+
+
+read local vectors 
+
+
+
+Definition at line 569 of file fclib.\+h.
+
+
+
+References A\+S\+S\+E\+RT, IO, fclib\+\_\+matrix\+::m, MM, fclib\+\_\+local\+::mu, fclib\+\_\+local\+::q, fclib\+\_\+local\+::R, fclib\+\_\+local\+::s, fclib\+\_\+local\+::spacedim, and fclib\+\_\+local\+::W.
+
+
+
+Referenced by fclib\+\_\+read\+\_\+local().
+
+\mbox{\Hypertarget{fclib_8h_a3da0efccf168aa02bf11dca34c838487}\label{fclib_8h_a3da0efccf168aa02bf11dca34c838487}} 
+\index{fclib.\+h@{fclib.\+h}!write\+\_\+problem\+\_\+info@{write\+\_\+problem\+\_\+info}}
+\index{write\+\_\+problem\+\_\+info@{write\+\_\+problem\+\_\+info}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{write\+\_\+problem\+\_\+info()}{write\_problem\_info()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void write\+\_\+problem\+\_\+info (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{id,  }\item[{struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}} $\ast$}]{info }\end{DoxyParamCaption})}
+
+
+
+write problem info 
+
+
+
+Definition at line 586 of file fclib.\+h.
+
+
+
+References fclib\+\_\+matrix\+::info, and IO.
+
+
+
+Referenced by fclib\+\_\+write\+\_\+global(), and fclib\+\_\+write\+\_\+local().
+
+\mbox{\Hypertarget{fclib_8h_ad90c7b6b28634ad42911fd0b380da541}\label{fclib_8h_ad90c7b6b28634ad42911fd0b380da541}} 
+\index{fclib.\+h@{fclib.\+h}!read\+\_\+problem\+\_\+info@{read\+\_\+problem\+\_\+info}}
+\index{read\+\_\+problem\+\_\+info@{read\+\_\+problem\+\_\+info}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{read\+\_\+problem\+\_\+info()}{read\_problem\_info()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}}$\ast$ read\+\_\+problem\+\_\+info (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{id }\end{DoxyParamCaption})}
+
+
+
+read problem info 
+
+
+
+Definition at line 594 of file fclib.\+h.
+
+
+
+References fclib\+\_\+info\+::description, IO, fclib\+\_\+info\+::math\+\_\+info, MM, and fclib\+\_\+info\+::title.
+
+
+
+Referenced by fclib\+\_\+read\+\_\+global(), and fclib\+\_\+read\+\_\+local().
+
+\mbox{\Hypertarget{fclib_8h_a1ef46fed17c8448bf63f11ae6756d0de}\label{fclib_8h_a1ef46fed17c8448bf63f11ae6756d0de}} 
+\index{fclib.\+h@{fclib.\+h}!write\+\_\+solution@{write\+\_\+solution}}
+\index{write\+\_\+solution@{write\+\_\+solution}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{write\+\_\+solution()}{write\_solution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void write\+\_\+solution (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{id,  }\item[{struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$}]{solution,  }\item[{hsize\+\_\+t}]{nv,  }\item[{hsize\+\_\+t}]{nr,  }\item[{hsize\+\_\+t}]{nl }\end{DoxyParamCaption})}
+
+
+
+write solution 
+
+
+
+Definition at line 631 of file fclib.\+h.
+
+
+
+References A\+S\+S\+E\+RT, IO, fclib\+\_\+solution\+::l, fclib\+\_\+solution\+::r, fclib\+\_\+solution\+::u, and fclib\+\_\+solution\+::v.
+
+
+
+Referenced by fclib\+\_\+write\+\_\+guesses(), and fclib\+\_\+write\+\_\+solution().
+
+\mbox{\Hypertarget{fclib_8h_a75c2ead97e9d12f48eaf8b1f3b851738}\label{fclib_8h_a75c2ead97e9d12f48eaf8b1f3b851738}} 
+\index{fclib.\+h@{fclib.\+h}!read\+\_\+solution@{read\+\_\+solution}}
+\index{read\+\_\+solution@{read\+\_\+solution}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{read\+\_\+solution()}{read\_solution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void read\+\_\+solution (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{id,  }\item[{hsize\+\_\+t}]{nv,  }\item[{hsize\+\_\+t}]{nr,  }\item[{hsize\+\_\+t}]{nl,  }\item[{struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$}]{solution }\end{DoxyParamCaption})}
+
+
+
+read solution 
+
+
+
+Definition at line 642 of file fclib.\+h.
+
+
+
+References A\+S\+S\+E\+RT, IO, fclib\+\_\+solution\+::l, MM, fclib\+\_\+solution\+::r, fclib\+\_\+solution\+::u, and fclib\+\_\+solution\+::v.
+
+
+
+Referenced by fclib\+\_\+read\+\_\+guesses(), and fclib\+\_\+read\+\_\+solution().
+
+\mbox{\Hypertarget{fclib_8h_ae7cbd3c281953eef55e58f5e84118279}\label{fclib_8h_ae7cbd3c281953eef55e58f5e84118279}} 
+\index{fclib.\+h@{fclib.\+h}!read\+\_\+nvnunrnl@{read\+\_\+nvnunrnl}}
+\index{read\+\_\+nvnunrnl@{read\+\_\+nvnunrnl}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{read\+\_\+nvnunrnl()}{read\_nvnunrnl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} int read\+\_\+nvnunrnl (\begin{DoxyParamCaption}\item[{hid\+\_\+t}]{file\+\_\+id,  }\item[{int $\ast$}]{nv,  }\item[{int $\ast$}]{nr,  }\item[{int $\ast$}]{nl }\end{DoxyParamCaption})}
+
+
+
+read solution sizes 
+
+
+
+Definition at line 666 of file fclib.\+h.
+
+
+
+References IO.
+
+
+
+Referenced by fclib\+\_\+read\+\_\+guesses(), fclib\+\_\+read\+\_\+solution(), fclib\+\_\+write\+\_\+guesses(), and fclib\+\_\+write\+\_\+solution().
+
+\mbox{\Hypertarget{fclib_8h_a404cf56c1179ab7142097022deaec14d}\label{fclib_8h_a404cf56c1179ab7142097022deaec14d}} 
+\index{fclib.\+h@{fclib.\+h}!delete\+\_\+matrix\+\_\+info@{delete\+\_\+matrix\+\_\+info}}
+\index{delete\+\_\+matrix\+\_\+info@{delete\+\_\+matrix\+\_\+info}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{delete\+\_\+matrix\+\_\+info()}{delete\_matrix\_info()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void delete\+\_\+matrix\+\_\+info (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info}} $\ast$}]{info }\end{DoxyParamCaption})}
+
+
+
+delete matrix info 
+
+
+
+Definition at line 698 of file fclib.\+h.
+
+
+
+References fclib\+\_\+matrix\+\_\+info\+::comment.
+
+
+
+Referenced by delete\+\_\+matrix().
+
+\mbox{\Hypertarget{fclib_8h_ac5e23d3dda5397f44d42053942eb2cc1}\label{fclib_8h_ac5e23d3dda5397f44d42053942eb2cc1}} 
+\index{fclib.\+h@{fclib.\+h}!delete\+\_\+matrix@{delete\+\_\+matrix}}
+\index{delete\+\_\+matrix@{delete\+\_\+matrix}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{delete\+\_\+matrix()}{delete\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void delete\+\_\+matrix (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+
+
+delete matrix 
+
+
+
+Definition at line 708 of file fclib.\+h.
+
+
+
+References delete\+\_\+matrix\+\_\+info(), fclib\+\_\+matrix\+::i, fclib\+\_\+matrix\+::info, fclib\+\_\+matrix\+::p, and fclib\+\_\+matrix\+::x.
+
+
+
+Referenced by fclib\+\_\+delete\+\_\+global(), and fclib\+\_\+delete\+\_\+local().
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{fclib_8h_ae0e70529fd92b8355068d75ffe7bcbe9}\label{fclib_8h_ae0e70529fd92b8355068d75ffe7bcbe9}} 
+\index{fclib.\+h@{fclib.\+h}!delete\+\_\+info@{delete\+\_\+info}}
+\index{delete\+\_\+info@{delete\+\_\+info}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{delete\+\_\+info()}{delete\_info()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fclib_8h_a39884ed51fb89354fd625364cd090da2}{F\+C\+L\+I\+B\+\_\+\+S\+T\+A\+T\+IC}} void delete\+\_\+info (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}} $\ast$}]{info }\end{DoxyParamCaption})}
+
+
+
+delete problem info 
+
+
+
+Definition at line 721 of file fclib.\+h.
+
+
+
+References fclib\+\_\+info\+::description, fclib\+\_\+info\+::math\+\_\+info, and fclib\+\_\+info\+::title.
+
+
+
+Referenced by fclib\+\_\+delete\+\_\+global(), and fclib\+\_\+delete\+\_\+local().
+
+
+
+\subsubsection{Variable Documentation}
+\mbox{\Hypertarget{fclib_8h_abaf169dc4591afe910aca1cbede2229a}\label{fclib_8h_abaf169dc4591afe910aca1cbede2229a}} 
+\index{fclib.\+h@{fclib.\+h}!fclib\+\_\+merit@{fclib\+\_\+merit}}
+\index{fclib\+\_\+merit@{fclib\+\_\+merit}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{fclib\+\_\+merit}{fclib\_merit}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{fclib_8h_ada539519ab2c1f2f9acb478ab3aeb23c}{F\+C\+L\+I\+B\+\_\+\+A\+P\+I\+C\+O\+M\+P\+I\+LE}} fclib\+\_\+merit}
+
+
+
+Definition at line 290 of file fclib.\+h.
+
+\mbox{\Hypertarget{fclib_8h_a61b8c09ca1a9b0c41a2a9e825dfdd6eb}\label{fclib_8h_a61b8c09ca1a9b0c41a2a9e825dfdd6eb}} 
+\index{fclib.\+h@{fclib.\+h}!M\+E\+R\+I\+T\+\_\+1@{M\+E\+R\+I\+T\+\_\+1}}
+\index{M\+E\+R\+I\+T\+\_\+1@{M\+E\+R\+I\+T\+\_\+1}!fclib.\+h@{fclib.\+h}}
+\paragraph{\texorpdfstring{M\+E\+R\+I\+T\+\_\+1}{MERIT\_1}}
+{\footnotesize\ttfamily M\+E\+R\+I\+T\+\_\+1}
+
+
+
+Definition at line 290 of file fclib.\+h.
+
+
+
+Referenced by main().
+

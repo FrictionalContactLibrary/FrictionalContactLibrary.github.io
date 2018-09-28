@@ -1,11 +1,10 @@
 \hypertarget{fctst__merit_8c}{}\subsection{fctst\+\_\+merit.\+c File Reference}
 \label{fctst__merit_8c}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-{\ttfamily \#include $<$string.\+h$>$}\\*
-{\ttfamily \#include $<$stdlib.\+h$>$}\\*
-{\ttfamily \#include $<$stdio.\+h$>$}\\*
-{\ttfamily \#include $<$time.\+h$>$}\\*
-{\ttfamily \#include \char`\"{}fclib.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}fcint.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}fclib.\+h\char`\"{}}\newline
 Include dependency graph for fctst\+\_\+merit.\+c\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -13,85 +12,132 @@ Include dependency graph for fctst\+\_\+merit.\+c\+:\nopagebreak
 \includegraphics[width=350pt]{fctst__merit_8c__incl}
 \end{center}
 \end{figure}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}{A\+S\+S\+E\+RT}}(Test, ...)
+\item 
+\#define \mbox{\hyperlink{fctst__merit_8c_a7e1b7988c998844258179660bb5f8e69}{IO}}(Call)~\mbox{\hyperlink{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}{A\+S\+S\+E\+RT}} ((Call) $>$= 0, \char`\"{}E\+R\+R\+O\+R\+: H\+D\+F5 call failed\char`\"{})
+\item 
+\#define \mbox{\hyperlink{fctst__merit_8c_ae5d192dca25b682622b72b1211df96b7}{MM}}(Call)~\mbox{\hyperlink{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}{A\+S\+S\+E\+RT}} ((Call), \char`\"{}E\+R\+R\+O\+R\+: out of memory\char`\"{})
+\end{DoxyCompactItemize}
 \subsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-static struct \hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info} $\ast$ \hyperlink{fctst__merit_8c_a5317d629631ea1f011ac56be9ea38b38}{matrix\+\_\+info} (struct \hyperlink{structfclib__matrix}{fclib\+\_\+matrix} $\ast$mat, char $\ast$comment)
+static struct \mbox{\hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info}} $\ast$ \mbox{\hyperlink{fctst__merit_8c_a5317d629631ea1f011ac56be9ea38b38}{matrix\+\_\+info}} (struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$mat, char $\ast$comment)
 \item 
-static struct \hyperlink{structfclib__matrix}{fclib\+\_\+matrix} $\ast$ \hyperlink{fctst__merit_8c_a6416171cd1c45fcd483d9f8d72b4d074}{random\+\_\+matrix} (int m, int n)
+static struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$ \mbox{\hyperlink{fctst__merit_8c_a6416171cd1c45fcd483d9f8d72b4d074}{random\+\_\+matrix}} (int m, int n)
 \item 
-static double $\ast$ \hyperlink{fctst__merit_8c_a999ad2a7d7f608315a960fead29ed28b}{random\+\_\+vector} (int n)
+static double $\ast$ \mbox{\hyperlink{fctst__merit_8c_a999ad2a7d7f608315a960fead29ed28b}{random\+\_\+vector}} (int n)
 \item 
-static struct \hyperlink{structfclib__info}{fclib\+\_\+info} $\ast$ \hyperlink{fctst__merit_8c_abacfc09e4ebacd539b34abc2eb6dd26c}{problem\+\_\+info} (char $\ast$title, char $\ast$desc, char $\ast$math)
+static struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}} $\ast$ \mbox{\hyperlink{fctst__merit_8c_abacfc09e4ebacd539b34abc2eb6dd26c}{problem\+\_\+info}} (char $\ast$title, char $\ast$desc, char $\ast$math)
 \item 
-static struct \hyperlink{structfclib__global}{fclib\+\_\+global} $\ast$ \hyperlink{fctst__merit_8c_a6bef941fe768030a414543381d847b64}{random\+\_\+global\+\_\+problem} (int global\+\_\+dofs, int contact\+\_\+points, int neq)
+static struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$ \mbox{\hyperlink{fctst__merit_8c_a6bef941fe768030a414543381d847b64}{random\+\_\+global\+\_\+problem}} (int global\+\_\+dofs, int contact\+\_\+points, int neq)
 \item 
-static struct \hyperlink{structfclib__solution}{fclib\+\_\+solution} $\ast$ \hyperlink{fctst__merit_8c_a7aad52ff7bfb95ad106f406bc9c55e58}{random\+\_\+global\+\_\+solutions} (struct \hyperlink{structfclib__global}{fclib\+\_\+global} $\ast$problem, int count)
+static struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$ \mbox{\hyperlink{fctst__merit_8c_a7aad52ff7bfb95ad106f406bc9c55e58}{random\+\_\+global\+\_\+solutions}} (struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$problem, int count)
 \item 
-static struct \hyperlink{structfclib__local}{fclib\+\_\+local} $\ast$ \hyperlink{fctst__merit_8c_aa112c21ec93e39bb3d3f0461aaa17eec}{random\+\_\+local\+\_\+problem} (int contact\+\_\+points, int neq)
+static struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$ \mbox{\hyperlink{fctst__merit_8c_aa112c21ec93e39bb3d3f0461aaa17eec}{random\+\_\+local\+\_\+problem}} (int contact\+\_\+points, int neq)
 \item 
-static struct \hyperlink{structfclib__solution}{fclib\+\_\+solution} $\ast$ \hyperlink{fctst__merit_8c_ab80ee715851eb0c92913d5687498c2d7}{random\+\_\+local\+\_\+solutions} (struct \hyperlink{structfclib__local}{fclib\+\_\+local} $\ast$problem, int count)
+static struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$ \mbox{\hyperlink{fctst__merit_8c_ab80ee715851eb0c92913d5687498c2d7}{random\+\_\+local\+\_\+solutions}} (struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$problem, int count)
 \item 
-static int \hyperlink{fctst__merit_8c_afe507e5b61471a838e743fe8966e1dde}{compare\+\_\+matrix\+\_\+infos} (struct \hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info} $\ast$a, struct \hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info} $\ast$b)
+static int \mbox{\hyperlink{fctst__merit_8c_afe507e5b61471a838e743fe8966e1dde}{compare\+\_\+matrix\+\_\+infos}} (struct \mbox{\hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info}} $\ast$a, struct \mbox{\hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info}} $\ast$b)
 \item 
-static int \hyperlink{fctst__merit_8c_ae337371ca0bad878ee90abcb775e94b6}{compare\+\_\+matrices} (char $\ast$name, struct \hyperlink{structfclib__matrix}{fclib\+\_\+matrix} $\ast$a, struct \hyperlink{structfclib__matrix}{fclib\+\_\+matrix} $\ast$b)
+static int \mbox{\hyperlink{fctst__merit_8c_ae337371ca0bad878ee90abcb775e94b6}{compare\+\_\+matrices}} (char $\ast$name, struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$a, struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$b)
 \item 
-static int \hyperlink{fctst__merit_8c_a67077fe8eef8d36f1bc54695d4e38b07}{compare\+\_\+vectors} (char $\ast$name, int n, double $\ast$a, double $\ast$b)
+static int \mbox{\hyperlink{fctst__merit_8c_a67077fe8eef8d36f1bc54695d4e38b07}{compare\+\_\+vectors}} (char $\ast$name, int n, double $\ast$a, double $\ast$b)
 \item 
-static int \hyperlink{fctst__merit_8c_a9616c18dc1480beb7de7875405ba8a69}{compare\+\_\+infos} (struct \hyperlink{structfclib__info}{fclib\+\_\+info} $\ast$a, struct \hyperlink{structfclib__info}{fclib\+\_\+info} $\ast$b)
+static int \mbox{\hyperlink{fctst__merit_8c_a9616c18dc1480beb7de7875405ba8a69}{compare\+\_\+infos}} (struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}} $\ast$a, struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}} $\ast$b)
 \item 
-static int \hyperlink{fctst__merit_8c_aeadef34f0fb9a9e71e98d044a21fb51f}{compare\+\_\+global\+\_\+problems} (struct \hyperlink{structfclib__global}{fclib\+\_\+global} $\ast$a, struct \hyperlink{structfclib__global}{fclib\+\_\+global} $\ast$b)
+static int \mbox{\hyperlink{fctst__merit_8c_aeadef34f0fb9a9e71e98d044a21fb51f}{compare\+\_\+global\+\_\+problems}} (struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$a, struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$b)
 \item 
-static int \hyperlink{fctst__merit_8c_ab0228efafe00f19b638a3f5cdd03eb98}{compare\+\_\+local\+\_\+problems} (struct \hyperlink{structfclib__local}{fclib\+\_\+local} $\ast$a, struct \hyperlink{structfclib__local}{fclib\+\_\+local} $\ast$b)
+static int \mbox{\hyperlink{fctst__merit_8c_ab0228efafe00f19b638a3f5cdd03eb98}{compare\+\_\+local\+\_\+problems}} (struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$a, struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$b)
 \item 
-static int \hyperlink{fctst__merit_8c_a65196cbffb155f5d40ff33f2d1b825c2}{compare\+\_\+solutions} (struct \hyperlink{structfclib__solution}{fclib\+\_\+solution} $\ast$a, struct \hyperlink{structfclib__solution}{fclib\+\_\+solution} $\ast$b, int nv, int nr, int nl)
+static int \mbox{\hyperlink{fctst__merit_8c_a65196cbffb155f5d40ff33f2d1b825c2}{compare\+\_\+solutions}} (struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$a, struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$b, int nv, int nr, int nl)
 \item 
-int \hyperlink{fctst__merit_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+int \mbox{\hyperlink{fctst__merit_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
 \end{DoxyCompactItemize}
 
 
+\subsubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}\label{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!A\+S\+S\+E\+RT@{A\+S\+S\+E\+RT}}
+\index{A\+S\+S\+E\+RT@{A\+S\+S\+E\+RT}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
+\paragraph{\texorpdfstring{A\+S\+S\+E\+RT}{ASSERT}}
+{\footnotesize\ttfamily \#define A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{Test,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+  if (! (Test)) \{ fprintf (stderr, \textcolor{stringliteral}{"%s: %d => "}, \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)
+    fprintf (stderr, \_\_VA\_ARGS\_\_);\(\backslash\)
+    fprintf (stderr, \textcolor{stringliteral}{"\(\backslash\)n"}); exit (1); \} \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+
+
+Definition at line 33 of file fctst\+\_\+merit.\+c.
+
+\mbox{\Hypertarget{fctst__merit_8c_a7e1b7988c998844258179660bb5f8e69}\label{fctst__merit_8c_a7e1b7988c998844258179660bb5f8e69}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!IO@{IO}}
+\index{IO@{IO}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
+\paragraph{\texorpdfstring{IO}{IO}}
+{\footnotesize\ttfamily \#define IO(\begin{DoxyParamCaption}\item[{}]{Call }\end{DoxyParamCaption})~\mbox{\hyperlink{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}{A\+S\+S\+E\+RT}} ((Call) $>$= 0, \char`\"{}E\+R\+R\+O\+R\+: H\+D\+F5 call failed\char`\"{})}
+
+
+
+Definition at line 39 of file fctst\+\_\+merit.\+c.
+
+\mbox{\Hypertarget{fctst__merit_8c_ae5d192dca25b682622b72b1211df96b7}\label{fctst__merit_8c_ae5d192dca25b682622b72b1211df96b7}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!MM@{MM}}
+\index{MM@{MM}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
+\paragraph{\texorpdfstring{MM}{MM}}
+{\footnotesize\ttfamily \#define MM(\begin{DoxyParamCaption}\item[{}]{Call }\end{DoxyParamCaption})~\mbox{\hyperlink{fctst__merit_8c_af6a170071ba1da3930abadc6d3f95493}{A\+S\+S\+E\+RT}} ((Call), \char`\"{}E\+R\+R\+O\+R\+: out of memory\char`\"{})}
+
+
+
+Definition at line 40 of file fctst\+\_\+merit.\+c.
+
+
+
+Referenced by matrix\+\_\+info(), problem\+\_\+info(), random\+\_\+global\+\_\+problem(), random\+\_\+global\+\_\+solutions(), random\+\_\+local\+\_\+problem(), random\+\_\+local\+\_\+solutions(), random\+\_\+matrix(), and random\+\_\+vector().
+
+
+
 \subsubsection{Function Documentation}
-\hypertarget{fctst__merit_8c_a5317d629631ea1f011ac56be9ea38b38}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!matrix\+\_\+info@{matrix\+\_\+info}}
+\mbox{\Hypertarget{fctst__merit_8c_a5317d629631ea1f011ac56be9ea38b38}\label{fctst__merit_8c_a5317d629631ea1f011ac56be9ea38b38}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!matrix\+\_\+info@{matrix\+\_\+info}}
 \index{matrix\+\_\+info@{matrix\+\_\+info}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{matrix\+\_\+info(struct fclib\+\_\+matrix $\ast$mat, char $\ast$comment)}]{\setlength{\rightskip}{0pt plus 5cm}static struct {\bf fclib\+\_\+matrix\+\_\+info}$\ast$ matrix\+\_\+info (
-\begin{DoxyParamCaption}
-\item[{struct {\bf fclib\+\_\+matrix} $\ast$}]{mat, }
-\item[{char $\ast$}]{comment}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_a5317d629631ea1f011ac56be9ea38b38}
-
-
-Definition at line 34 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{matrix\+\_\+info()}{matrix\_info()}}
+{\footnotesize\ttfamily static struct \mbox{\hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info}}$\ast$ matrix\+\_\+info (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$}]{mat,  }\item[{char $\ast$}]{comment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-References fclib\+\_\+matrix\+\_\+info\+::comment, fclib\+\_\+matrix\+\_\+info\+::conditioning, fclib\+\_\+matrix\+\_\+info\+::determinant, fclib\+\_\+matrix\+::m, M\+M, and fclib\+\_\+matrix\+\_\+info\+::rank.
+Definition at line 43 of file fctst\+\_\+merit.\+c.
+
+
+
+References fclib\+\_\+matrix\+\_\+info\+::comment, fclib\+\_\+matrix\+\_\+info\+::conditioning, fclib\+\_\+matrix\+\_\+info\+::determinant, fclib\+\_\+matrix\+::m, MM, and fclib\+\_\+matrix\+\_\+info\+::rank.
 
 
 
 Referenced by random\+\_\+matrix().
 
-\hypertarget{fctst__merit_8c_a6416171cd1c45fcd483d9f8d72b4d074}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+matrix@{random\+\_\+matrix}}
+\mbox{\Hypertarget{fctst__merit_8c_a6416171cd1c45fcd483d9f8d72b4d074}\label{fctst__merit_8c_a6416171cd1c45fcd483d9f8d72b4d074}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+matrix@{random\+\_\+matrix}}
 \index{random\+\_\+matrix@{random\+\_\+matrix}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{random\+\_\+matrix(int m, int n)}]{\setlength{\rightskip}{0pt plus 5cm}static struct {\bf fclib\+\_\+matrix}$\ast$ random\+\_\+matrix (
-\begin{DoxyParamCaption}
-\item[{int}]{m, }
-\item[{int}]{n}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_a6416171cd1c45fcd483d9f8d72b4d074}
-
-
-Definition at line 49 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{random\+\_\+matrix()}{random\_matrix()}}
+{\footnotesize\ttfamily static struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}}$\ast$ random\+\_\+matrix (\begin{DoxyParamCaption}\item[{int}]{m,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-References fclib\+\_\+matrix\+::i, fclib\+\_\+matrix\+::info, fclib\+\_\+matrix\+::m, matrix\+\_\+info(), M\+M, fclib\+\_\+matrix\+::n, fclib\+\_\+matrix\+::nz, fclib\+\_\+matrix\+::nzmax, fclib\+\_\+matrix\+::p, and fclib\+\_\+matrix\+::x.
+Definition at line 58 of file fctst\+\_\+merit.\+c.
+
+
+
+References fclib\+\_\+matrix\+::i, fclib\+\_\+matrix\+::info, fclib\+\_\+matrix\+::m, matrix\+\_\+info(), MM, fclib\+\_\+matrix\+::n, fclib\+\_\+matrix\+::nz, fclib\+\_\+matrix\+::nzmax, fclib\+\_\+matrix\+::p, and fclib\+\_\+matrix\+::x.
 
 
 
 Referenced by random\+\_\+global\+\_\+problem(), and random\+\_\+local\+\_\+problem().
-
-
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -100,66 +146,55 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=264pt]{fctst__merit_8c_a6416171cd1c45fcd483d9f8d72b4d074_cgraph}
 \end{center}
 \end{figure}
-
-
-\hypertarget{fctst__merit_8c_a999ad2a7d7f608315a960fead29ed28b}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+vector@{random\+\_\+vector}}
+\mbox{\Hypertarget{fctst__merit_8c_a999ad2a7d7f608315a960fead29ed28b}\label{fctst__merit_8c_a999ad2a7d7f608315a960fead29ed28b}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+vector@{random\+\_\+vector}}
 \index{random\+\_\+vector@{random\+\_\+vector}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{random\+\_\+vector(int n)}]{\setlength{\rightskip}{0pt plus 5cm}static double$\ast$ random\+\_\+vector (
-\begin{DoxyParamCaption}
-\item[{int}]{n}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_a999ad2a7d7f608315a960fead29ed28b}
-
-
-Definition at line 92 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{random\+\_\+vector()}{random\_vector()}}
+{\footnotesize\ttfamily static double$\ast$ random\+\_\+vector (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-References M\+M.
+Definition at line 101 of file fctst\+\_\+merit.\+c.
+
+
+
+References MM, and fclib\+\_\+matrix\+::n.
 
 
 
 Referenced by random\+\_\+global\+\_\+problem(), random\+\_\+global\+\_\+solutions(), random\+\_\+local\+\_\+problem(), and random\+\_\+local\+\_\+solutions().
 
-\hypertarget{fctst__merit_8c_abacfc09e4ebacd539b34abc2eb6dd26c}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!problem\+\_\+info@{problem\+\_\+info}}
+\mbox{\Hypertarget{fctst__merit_8c_abacfc09e4ebacd539b34abc2eb6dd26c}\label{fctst__merit_8c_abacfc09e4ebacd539b34abc2eb6dd26c}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!problem\+\_\+info@{problem\+\_\+info}}
 \index{problem\+\_\+info@{problem\+\_\+info}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{problem\+\_\+info(char $\ast$title, char $\ast$desc, char $\ast$math)}]{\setlength{\rightskip}{0pt plus 5cm}static struct {\bf fclib\+\_\+info}$\ast$ problem\+\_\+info (
-\begin{DoxyParamCaption}
-\item[{char $\ast$}]{title, }
-\item[{char $\ast$}]{desc, }
-\item[{char $\ast$}]{math}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_abacfc09e4ebacd539b34abc2eb6dd26c}
-
-
-Definition at line 103 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{problem\+\_\+info()}{problem\_info()}}
+{\footnotesize\ttfamily static struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}}$\ast$ problem\+\_\+info (\begin{DoxyParamCaption}\item[{char $\ast$}]{title,  }\item[{char $\ast$}]{desc,  }\item[{char $\ast$}]{math }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-References fclib\+\_\+info\+::description, fclib\+\_\+info\+::math\+\_\+info, M\+M, and fclib\+\_\+info\+::title.
+Definition at line 112 of file fctst\+\_\+merit.\+c.
+
+
+
+References fclib\+\_\+info\+::description, fclib\+\_\+info\+::math\+\_\+info, MM, and fclib\+\_\+info\+::title.
 
 
 
 Referenced by random\+\_\+global\+\_\+problem(), and random\+\_\+local\+\_\+problem().
 
-\hypertarget{fctst__merit_8c_a6bef941fe768030a414543381d847b64}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+global\+\_\+problem@{random\+\_\+global\+\_\+problem}}
+\mbox{\Hypertarget{fctst__merit_8c_a6bef941fe768030a414543381d847b64}\label{fctst__merit_8c_a6bef941fe768030a414543381d847b64}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+global\+\_\+problem@{random\+\_\+global\+\_\+problem}}
 \index{random\+\_\+global\+\_\+problem@{random\+\_\+global\+\_\+problem}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{random\+\_\+global\+\_\+problem(int global\+\_\+dofs, int contact\+\_\+points, int neq)}]{\setlength{\rightskip}{0pt plus 5cm}static struct {\bf fclib\+\_\+global}$\ast$ random\+\_\+global\+\_\+problem (
-\begin{DoxyParamCaption}
-\item[{int}]{global\+\_\+dofs, }
-\item[{int}]{contact\+\_\+points, }
-\item[{int}]{neq}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_a6bef941fe768030a414543381d847b64}
-
-
-Definition at line 119 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{random\+\_\+global\+\_\+problem()}{random\_global\_problem()}}
+{\footnotesize\ttfamily static struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}}$\ast$ random\+\_\+global\+\_\+problem (\begin{DoxyParamCaption}\item[{int}]{global\+\_\+dofs,  }\item[{int}]{contact\+\_\+points,  }\item[{int}]{neq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-References fclib\+\_\+global\+::b, fclib\+\_\+global\+::f, fclib\+\_\+global\+::\+G, fclib\+\_\+global\+::\+H, fclib\+\_\+global\+::info, fclib\+\_\+global\+::\+M, M\+M, fclib\+\_\+global\+::mu, fclib\+\_\+matrix\+::n, problem\+\_\+info(), random\+\_\+matrix(), random\+\_\+vector(), fclib\+\_\+global\+::spacedim, and fclib\+\_\+global\+::w.
+Definition at line 128 of file fctst\+\_\+merit.\+c.
 
 
+
+References fclib\+\_\+global\+::b, fclib\+\_\+global\+::f, fclib\+\_\+global\+::G, fclib\+\_\+global\+::H, fclib\+\_\+global\+::info, fclib\+\_\+global\+::M, MM, fclib\+\_\+global\+::mu, fclib\+\_\+matrix\+::n, problem\+\_\+info(), random\+\_\+matrix(), random\+\_\+vector(), fclib\+\_\+global\+::spacedim, and fclib\+\_\+global\+::w.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -168,25 +203,19 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{fctst__merit_8c_a6bef941fe768030a414543381d847b64_cgraph}
 \end{center}
 \end{figure}
-
-
-\hypertarget{fctst__merit_8c_a7aad52ff7bfb95ad106f406bc9c55e58}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+global\+\_\+solutions@{random\+\_\+global\+\_\+solutions}}
+\mbox{\Hypertarget{fctst__merit_8c_a7aad52ff7bfb95ad106f406bc9c55e58}\label{fctst__merit_8c_a7aad52ff7bfb95ad106f406bc9c55e58}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+global\+\_\+solutions@{random\+\_\+global\+\_\+solutions}}
 \index{random\+\_\+global\+\_\+solutions@{random\+\_\+global\+\_\+solutions}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{random\+\_\+global\+\_\+solutions(struct fclib\+\_\+global $\ast$problem, int count)}]{\setlength{\rightskip}{0pt plus 5cm}static struct {\bf fclib\+\_\+solution}$\ast$ random\+\_\+global\+\_\+solutions (
-\begin{DoxyParamCaption}
-\item[{struct {\bf fclib\+\_\+global} $\ast$}]{problem, }
-\item[{int}]{count}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_a7aad52ff7bfb95ad106f406bc9c55e58}
-
-
-Definition at line 142 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{random\+\_\+global\+\_\+solutions()}{random\_global\_solutions()}}
+{\footnotesize\ttfamily static struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}}$\ast$ random\+\_\+global\+\_\+solutions (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$}]{problem,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-References fclib\+\_\+global\+::\+G, fclib\+\_\+global\+::\+H, fclib\+\_\+solution\+::l, fclib\+\_\+global\+::\+M, M\+M, fclib\+\_\+matrix\+::n, fclib\+\_\+solution\+::r, random\+\_\+vector(), fclib\+\_\+solution\+::u, and fclib\+\_\+solution\+::v.
+Definition at line 151 of file fctst\+\_\+merit.\+c.
 
 
+
+References fclib\+\_\+global\+::G, fclib\+\_\+global\+::H, fclib\+\_\+solution\+::l, fclib\+\_\+global\+::M, MM, fclib\+\_\+matrix\+::n, fclib\+\_\+solution\+::r, random\+\_\+vector(), fclib\+\_\+solution\+::u, and fclib\+\_\+solution\+::v.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -195,25 +224,19 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=327pt]{fctst__merit_8c_a7aad52ff7bfb95ad106f406bc9c55e58_cgraph}
 \end{center}
 \end{figure}
-
-
-\hypertarget{fctst__merit_8c_aa112c21ec93e39bb3d3f0461aaa17eec}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+local\+\_\+problem@{random\+\_\+local\+\_\+problem}}
+\mbox{\Hypertarget{fctst__merit_8c_aa112c21ec93e39bb3d3f0461aaa17eec}\label{fctst__merit_8c_aa112c21ec93e39bb3d3f0461aaa17eec}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+local\+\_\+problem@{random\+\_\+local\+\_\+problem}}
 \index{random\+\_\+local\+\_\+problem@{random\+\_\+local\+\_\+problem}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{random\+\_\+local\+\_\+problem(int contact\+\_\+points, int neq)}]{\setlength{\rightskip}{0pt plus 5cm}static struct {\bf fclib\+\_\+local}$\ast$ random\+\_\+local\+\_\+problem (
-\begin{DoxyParamCaption}
-\item[{int}]{contact\+\_\+points, }
-\item[{int}]{neq}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_aa112c21ec93e39bb3d3f0461aaa17eec}
-
-
-Definition at line 162 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{random\+\_\+local\+\_\+problem()}{random\_local\_problem()}}
+{\footnotesize\ttfamily static struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}}$\ast$ random\+\_\+local\+\_\+problem (\begin{DoxyParamCaption}\item[{int}]{contact\+\_\+points,  }\item[{int}]{neq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-References fclib\+\_\+local\+::info, M\+M, fclib\+\_\+local\+::mu, problem\+\_\+info(), fclib\+\_\+local\+::q, fclib\+\_\+local\+::\+R, random\+\_\+matrix(), random\+\_\+vector(), fclib\+\_\+local\+::s, fclib\+\_\+local\+::spacedim, fclib\+\_\+local\+::\+V, and fclib\+\_\+local\+::\+W.
+Definition at line 171 of file fctst\+\_\+merit.\+c.
 
 
+
+References fclib\+\_\+local\+::info, MM, fclib\+\_\+local\+::mu, problem\+\_\+info(), fclib\+\_\+local\+::q, fclib\+\_\+local\+::R, random\+\_\+matrix(), random\+\_\+vector(), fclib\+\_\+local\+::s, fclib\+\_\+local\+::spacedim, fclib\+\_\+local\+::V, and fclib\+\_\+local\+::W.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -222,25 +245,19 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{fctst__merit_8c_aa112c21ec93e39bb3d3f0461aaa17eec_cgraph}
 \end{center}
 \end{figure}
-
-
-\hypertarget{fctst__merit_8c_ab80ee715851eb0c92913d5687498c2d7}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+local\+\_\+solutions@{random\+\_\+local\+\_\+solutions}}
+\mbox{\Hypertarget{fctst__merit_8c_ab80ee715851eb0c92913d5687498c2d7}\label{fctst__merit_8c_ab80ee715851eb0c92913d5687498c2d7}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!random\+\_\+local\+\_\+solutions@{random\+\_\+local\+\_\+solutions}}
 \index{random\+\_\+local\+\_\+solutions@{random\+\_\+local\+\_\+solutions}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{random\+\_\+local\+\_\+solutions(struct fclib\+\_\+local $\ast$problem, int count)}]{\setlength{\rightskip}{0pt plus 5cm}static struct {\bf fclib\+\_\+solution}$\ast$ random\+\_\+local\+\_\+solutions (
-\begin{DoxyParamCaption}
-\item[{struct {\bf fclib\+\_\+local} $\ast$}]{problem, }
-\item[{int}]{count}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_ab80ee715851eb0c92913d5687498c2d7}
-
-
-Definition at line 190 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{random\+\_\+local\+\_\+solutions()}{random\_local\_solutions()}}
+{\footnotesize\ttfamily static struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}}$\ast$ random\+\_\+local\+\_\+solutions (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$}]{problem,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-References fclib\+\_\+solution\+::l, M\+M, fclib\+\_\+matrix\+::n, fclib\+\_\+local\+::\+R, fclib\+\_\+solution\+::r, random\+\_\+vector(), fclib\+\_\+solution\+::u, fclib\+\_\+solution\+::v, and fclib\+\_\+local\+::\+W.
+Definition at line 199 of file fctst\+\_\+merit.\+c.
 
 
+
+References fclib\+\_\+solution\+::l, MM, fclib\+\_\+matrix\+::n, fclib\+\_\+local\+::R, fclib\+\_\+solution\+::r, random\+\_\+vector(), fclib\+\_\+solution\+::u, fclib\+\_\+solution\+::v, and fclib\+\_\+local\+::W.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -249,19 +266,15 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=321pt]{fctst__merit_8c_ab80ee715851eb0c92913d5687498c2d7_cgraph}
 \end{center}
 \end{figure}
-
-
-\hypertarget{fctst__merit_8c_afe507e5b61471a838e743fe8966e1dde}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+matrix\+\_\+infos@{compare\+\_\+matrix\+\_\+infos}}
+\mbox{\Hypertarget{fctst__merit_8c_afe507e5b61471a838e743fe8966e1dde}\label{fctst__merit_8c_afe507e5b61471a838e743fe8966e1dde}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+matrix\+\_\+infos@{compare\+\_\+matrix\+\_\+infos}}
 \index{compare\+\_\+matrix\+\_\+infos@{compare\+\_\+matrix\+\_\+infos}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{compare\+\_\+matrix\+\_\+infos(struct fclib\+\_\+matrix\+\_\+info $\ast$a, struct fclib\+\_\+matrix\+\_\+info $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}static int compare\+\_\+matrix\+\_\+infos (
-\begin{DoxyParamCaption}
-\item[{struct {\bf fclib\+\_\+matrix\+\_\+info} $\ast$}]{a, }
-\item[{struct {\bf fclib\+\_\+matrix\+\_\+info} $\ast$}]{b}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_afe507e5b61471a838e743fe8966e1dde}
+\paragraph{\texorpdfstring{compare\+\_\+matrix\+\_\+infos()}{compare\_matrix\_infos()}}
+{\footnotesize\ttfamily static int compare\+\_\+matrix\+\_\+infos (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info}} $\ast$}]{a,  }\item[{struct \mbox{\hyperlink{structfclib__matrix__info}{fclib\+\_\+matrix\+\_\+info}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line 210 of file fctst\+\_\+merit.\+c.
+
+Definition at line 219 of file fctst\+\_\+merit.\+c.
 
 
 
@@ -271,18 +284,15 @@ References fclib\+\_\+matrix\+\_\+info\+::comment, fclib\+\_\+matrix\+\_\+info\+
 
 Referenced by compare\+\_\+matrices().
 
-\hypertarget{fctst__merit_8c_ae337371ca0bad878ee90abcb775e94b6}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+matrices@{compare\+\_\+matrices}}
+\mbox{\Hypertarget{fctst__merit_8c_ae337371ca0bad878ee90abcb775e94b6}\label{fctst__merit_8c_ae337371ca0bad878ee90abcb775e94b6}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+matrices@{compare\+\_\+matrices}}
 \index{compare\+\_\+matrices@{compare\+\_\+matrices}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{compare\+\_\+matrices(char $\ast$name, struct fclib\+\_\+matrix $\ast$a, struct fclib\+\_\+matrix $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}static int compare\+\_\+matrices (
-\begin{DoxyParamCaption}
-\item[{char $\ast$}]{name, }
-\item[{struct {\bf fclib\+\_\+matrix} $\ast$}]{a, }
-\item[{struct {\bf fclib\+\_\+matrix} $\ast$}]{b}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_ae337371ca0bad878ee90abcb775e94b6}
+\paragraph{\texorpdfstring{compare\+\_\+matrices()}{compare\_matrices()}}
+{\footnotesize\ttfamily static int compare\+\_\+matrices (\begin{DoxyParamCaption}\item[{char $\ast$}]{name,  }\item[{struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$}]{a,  }\item[{struct \mbox{\hyperlink{structfclib__matrix}{fclib\+\_\+matrix}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line 223 of file fctst\+\_\+merit.\+c.
+
+Definition at line 232 of file fctst\+\_\+merit.\+c.
 
 
 
@@ -292,8 +302,6 @@ References compare\+\_\+matrix\+\_\+infos(), fclib\+\_\+matrix\+::i, fclib\+\_\+
 
 Referenced by compare\+\_\+global\+\_\+problems(), and compare\+\_\+local\+\_\+problems().
 
-
-
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -301,37 +309,29 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=330pt]{fctst__merit_8c_ae337371ca0bad878ee90abcb775e94b6_cgraph}
 \end{center}
 \end{figure}
-
-
-\hypertarget{fctst__merit_8c_a67077fe8eef8d36f1bc54695d4e38b07}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+vectors@{compare\+\_\+vectors}}
+\mbox{\Hypertarget{fctst__merit_8c_a67077fe8eef8d36f1bc54695d4e38b07}\label{fctst__merit_8c_a67077fe8eef8d36f1bc54695d4e38b07}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+vectors@{compare\+\_\+vectors}}
 \index{compare\+\_\+vectors@{compare\+\_\+vectors}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{compare\+\_\+vectors(char $\ast$name, int n, double $\ast$a, double $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}static int compare\+\_\+vectors (
-\begin{DoxyParamCaption}
-\item[{char $\ast$}]{name, }
-\item[{int}]{n, }
-\item[{double $\ast$}]{a, }
-\item[{double $\ast$}]{b}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_a67077fe8eef8d36f1bc54695d4e38b07}
+\paragraph{\texorpdfstring{compare\+\_\+vectors()}{compare\_vectors()}}
+{\footnotesize\ttfamily static int compare\+\_\+vectors (\begin{DoxyParamCaption}\item[{char $\ast$}]{name,  }\item[{int}]{n,  }\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line 328 of file fctst\+\_\+merit.\+c.
+
+Definition at line 337 of file fctst\+\_\+merit.\+c.
 
 
 
 Referenced by compare\+\_\+global\+\_\+problems(), compare\+\_\+local\+\_\+problems(), and compare\+\_\+solutions().
 
-\hypertarget{fctst__merit_8c_a9616c18dc1480beb7de7875405ba8a69}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+infos@{compare\+\_\+infos}}
+\mbox{\Hypertarget{fctst__merit_8c_a9616c18dc1480beb7de7875405ba8a69}\label{fctst__merit_8c_a9616c18dc1480beb7de7875405ba8a69}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+infos@{compare\+\_\+infos}}
 \index{compare\+\_\+infos@{compare\+\_\+infos}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{compare\+\_\+infos(struct fclib\+\_\+info $\ast$a, struct fclib\+\_\+info $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}static int compare\+\_\+infos (
-\begin{DoxyParamCaption}
-\item[{struct {\bf fclib\+\_\+info} $\ast$}]{a, }
-\item[{struct {\bf fclib\+\_\+info} $\ast$}]{b}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_a9616c18dc1480beb7de7875405ba8a69}
+\paragraph{\texorpdfstring{compare\+\_\+infos()}{compare\_infos()}}
+{\footnotesize\ttfamily static int compare\+\_\+infos (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}} $\ast$}]{a,  }\item[{struct \mbox{\hyperlink{structfclib__info}{fclib\+\_\+info}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line 348 of file fctst\+\_\+merit.\+c.
+
+Definition at line 357 of file fctst\+\_\+merit.\+c.
 
 
 
@@ -341,23 +341,19 @@ References fclib\+\_\+info\+::description, fclib\+\_\+info\+::math\+\_\+info, an
 
 Referenced by compare\+\_\+global\+\_\+problems(), and compare\+\_\+local\+\_\+problems().
 
-\hypertarget{fctst__merit_8c_aeadef34f0fb9a9e71e98d044a21fb51f}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+global\+\_\+problems@{compare\+\_\+global\+\_\+problems}}
+\mbox{\Hypertarget{fctst__merit_8c_aeadef34f0fb9a9e71e98d044a21fb51f}\label{fctst__merit_8c_aeadef34f0fb9a9e71e98d044a21fb51f}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+global\+\_\+problems@{compare\+\_\+global\+\_\+problems}}
 \index{compare\+\_\+global\+\_\+problems@{compare\+\_\+global\+\_\+problems}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{compare\+\_\+global\+\_\+problems(struct fclib\+\_\+global $\ast$a, struct fclib\+\_\+global $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}static int compare\+\_\+global\+\_\+problems (
-\begin{DoxyParamCaption}
-\item[{struct {\bf fclib\+\_\+global} $\ast$}]{a, }
-\item[{struct {\bf fclib\+\_\+global} $\ast$}]{b}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_aeadef34f0fb9a9e71e98d044a21fb51f}
-
-
-Definition at line 360 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{compare\+\_\+global\+\_\+problems()}{compare\_global\_problems()}}
+{\footnotesize\ttfamily static int compare\+\_\+global\+\_\+problems (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$}]{a,  }\item[{struct \mbox{\hyperlink{structfclib__global}{fclib\+\_\+global}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-References fclib\+\_\+global\+::b, compare\+\_\+infos(), compare\+\_\+matrices(), compare\+\_\+vectors(), fclib\+\_\+global\+::f, fclib\+\_\+global\+::\+G, fclib\+\_\+global\+::\+H, fclib\+\_\+global\+::info, fclib\+\_\+matrix\+::m, fclib\+\_\+global\+::\+M, fclib\+\_\+global\+::mu, fclib\+\_\+matrix\+::n, fclib\+\_\+global\+::spacedim, and fclib\+\_\+global\+::w.
+Definition at line 369 of file fctst\+\_\+merit.\+c.
 
 
+
+References fclib\+\_\+global\+::b, compare\+\_\+infos(), compare\+\_\+matrices(), compare\+\_\+vectors(), fclib\+\_\+global\+::f, fclib\+\_\+global\+::G, fclib\+\_\+global\+::H, fclib\+\_\+global\+::info, fclib\+\_\+matrix\+::m, fclib\+\_\+global\+::M, fclib\+\_\+global\+::mu, fclib\+\_\+matrix\+::n, fclib\+\_\+global\+::spacedim, and fclib\+\_\+global\+::w.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -366,25 +362,19 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{fctst__merit_8c_aeadef34f0fb9a9e71e98d044a21fb51f_cgraph}
 \end{center}
 \end{figure}
-
-
-\hypertarget{fctst__merit_8c_ab0228efafe00f19b638a3f5cdd03eb98}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+local\+\_\+problems@{compare\+\_\+local\+\_\+problems}}
+\mbox{\Hypertarget{fctst__merit_8c_ab0228efafe00f19b638a3f5cdd03eb98}\label{fctst__merit_8c_ab0228efafe00f19b638a3f5cdd03eb98}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+local\+\_\+problems@{compare\+\_\+local\+\_\+problems}}
 \index{compare\+\_\+local\+\_\+problems@{compare\+\_\+local\+\_\+problems}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{compare\+\_\+local\+\_\+problems(struct fclib\+\_\+local $\ast$a, struct fclib\+\_\+local $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}static int compare\+\_\+local\+\_\+problems (
-\begin{DoxyParamCaption}
-\item[{struct {\bf fclib\+\_\+local} $\ast$}]{a, }
-\item[{struct {\bf fclib\+\_\+local} $\ast$}]{b}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_ab0228efafe00f19b638a3f5cdd03eb98}
-
-
-Definition at line 376 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{compare\+\_\+local\+\_\+problems()}{compare\_local\_problems()}}
+{\footnotesize\ttfamily static int compare\+\_\+local\+\_\+problems (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$}]{a,  }\item[{struct \mbox{\hyperlink{structfclib__local}{fclib\+\_\+local}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-References compare\+\_\+infos(), compare\+\_\+matrices(), compare\+\_\+vectors(), fclib\+\_\+local\+::info, fclib\+\_\+local\+::mu, fclib\+\_\+matrix\+::n, fclib\+\_\+local\+::q, fclib\+\_\+local\+::\+R, fclib\+\_\+local\+::s, fclib\+\_\+local\+::spacedim, fclib\+\_\+local\+::\+V, and fclib\+\_\+local\+::\+W.
+Definition at line 385 of file fctst\+\_\+merit.\+c.
 
 
+
+References compare\+\_\+infos(), compare\+\_\+matrices(), compare\+\_\+vectors(), fclib\+\_\+local\+::info, fclib\+\_\+local\+::mu, fclib\+\_\+matrix\+::n, fclib\+\_\+local\+::q, fclib\+\_\+local\+::R, fclib\+\_\+local\+::s, fclib\+\_\+local\+::spacedim, fclib\+\_\+local\+::V, and fclib\+\_\+local\+::W.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -393,28 +383,19 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{fctst__merit_8c_ab0228efafe00f19b638a3f5cdd03eb98_cgraph}
 \end{center}
 \end{figure}
-
-
-\hypertarget{fctst__merit_8c_a65196cbffb155f5d40ff33f2d1b825c2}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+solutions@{compare\+\_\+solutions}}
+\mbox{\Hypertarget{fctst__merit_8c_a65196cbffb155f5d40ff33f2d1b825c2}\label{fctst__merit_8c_a65196cbffb155f5d40ff33f2d1b825c2}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!compare\+\_\+solutions@{compare\+\_\+solutions}}
 \index{compare\+\_\+solutions@{compare\+\_\+solutions}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{compare\+\_\+solutions(struct fclib\+\_\+solution $\ast$a, struct fclib\+\_\+solution $\ast$b, int nv, int nr, int nl)}]{\setlength{\rightskip}{0pt plus 5cm}static int compare\+\_\+solutions (
-\begin{DoxyParamCaption}
-\item[{struct {\bf fclib\+\_\+solution} $\ast$}]{a, }
-\item[{struct {\bf fclib\+\_\+solution} $\ast$}]{b, }
-\item[{int}]{nv, }
-\item[{int}]{nr, }
-\item[{int}]{nl}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{fctst__merit_8c_a65196cbffb155f5d40ff33f2d1b825c2}
+\paragraph{\texorpdfstring{compare\+\_\+solutions()}{compare\_solutions()}}
+{\footnotesize\ttfamily static int compare\+\_\+solutions (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$}]{a,  }\item[{struct \mbox{\hyperlink{structfclib__solution}{fclib\+\_\+solution}} $\ast$}]{b,  }\item[{int}]{nv,  }\item[{int}]{nr,  }\item[{int}]{nl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line 391 of file fctst\+\_\+merit.\+c.
+
+Definition at line 400 of file fctst\+\_\+merit.\+c.
 
 
 
 References compare\+\_\+vectors(), fclib\+\_\+solution\+::l, fclib\+\_\+solution\+::r, fclib\+\_\+solution\+::u, and fclib\+\_\+solution\+::v.
-
-
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -423,25 +404,19 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=309pt]{fctst__merit_8c_a65196cbffb155f5d40ff33f2d1b825c2_cgraph}
 \end{center}
 \end{figure}
-
-
-\hypertarget{fctst__merit_8c_a3c04138a5bfe5d72780bb7e82a18e627}{}\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!main@{main}}
+\mbox{\Hypertarget{fctst__merit_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{fctst__merit_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}!main@{main}}
 \index{main@{main}!fctst\+\_\+merit.\+c@{fctst\+\_\+merit.\+c}}
-\paragraph[{main(int argc, char $\ast$$\ast$argv)}]{\setlength{\rightskip}{0pt plus 5cm}int main (
-\begin{DoxyParamCaption}
-\item[{int}]{argc, }
-\item[{char $\ast$$\ast$}]{argv}
-\end{DoxyParamCaption}
-)}\label{fctst__merit_8c_a3c04138a5bfe5d72780bb7e82a18e627}
-
-
-Definition at line 401 of file fctst\+\_\+merit.\+c.
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
 
 
 
-References fclib\+\_\+delete\+\_\+global(), fclib\+\_\+delete\+\_\+local(), fclib\+\_\+delete\+\_\+solutions(), fclib\+\_\+merit\+\_\+global(), fclib\+\_\+merit\+\_\+local(), fclib\+\_\+read\+\_\+global(), fclib\+\_\+read\+\_\+guesses(), fclib\+\_\+read\+\_\+local(), fclib\+\_\+read\+\_\+solution(), and M\+E\+R\+I\+T\+\_\+1.
+Definition at line 410 of file fctst\+\_\+merit.\+c.
 
 
+
+References fclib\+\_\+delete\+\_\+global(), fclib\+\_\+delete\+\_\+local(), fclib\+\_\+delete\+\_\+solutions(), fclib\+\_\+read\+\_\+global(), fclib\+\_\+read\+\_\+guesses(), fclib\+\_\+read\+\_\+local(), fclib\+\_\+read\+\_\+solution(), and M\+E\+R\+I\+T\+\_\+1.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -450,5 +425,3 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{fctst__merit_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
 \end{center}
 \end{figure}
-
-

@@ -6,239 +6,16 @@
     <filename>additionalpages_8doxygen</filename>
   </compound>
   <compound kind="file">
-    <name>fcint.h</name>
-    <path>/Users/acary/Work/fclib/src/</path>
-    <filename>fcint_8h</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>ASSERT</name>
-      <anchorfile>fcint_8h.html</anchorfile>
-      <anchor>af6a170071ba1da3930abadc6d3f95493</anchor>
-      <arglist>(Test,...)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>IO</name>
-      <anchorfile>fcint_8h.html</anchorfile>
-      <anchor>a7e1b7988c998844258179660bb5f8e69</anchor>
-      <arglist>(Call)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>MM</name>
-      <anchorfile>fcint_8h.html</anchorfile>
-      <anchor>ae5d192dca25b682622b72b1211df96b7</anchor>
-      <arglist>(Call)</arglist>
-    </member>
-  </compound>
-  <compound kind="file">
     <name>fclib.c</name>
     <path>/Users/acary/Work/fclib/src/</path>
     <filename>fclib_8c</filename>
     <includes id="fclib_8h" name="fclib.h" local="yes" imported="no">fclib.h</includes>
-    <includes id="fcint_8h" name="fcint.h" local="yes" imported="no">fcint.h</includes>
     <member kind="define">
       <type>#define</type>
-      <name>H5Gcreate_vers</name>
+      <name>FCLIB_IMPLEMENTATION</name>
       <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>ae8ec3114e7970ceac40260041d66edbb</anchor>
+      <anchor>ada04b9d5474ea67cc2ae291ce69bf20a</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>H5Gopen_vers</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a76c98e4e3ad7bd3a5a480e59f446d20d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static hid_t</type>
-      <name>H5Gmake</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a59a656449b319a4517bb7e3c95efcb5d</anchor>
-      <arglist>(hid_t loc_id, const char *name)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>write_matrix</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>aefffb8708bf8509b7832d3ed70d4be47</anchor>
-      <arglist>(hid_t id, struct fclib_matrix *mat)</arglist>
-    </member>
-    <member kind="function">
-      <type>struct fclib_matrix *</type>
-      <name>read_matrix</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a39c7990d9fd2ab18430feb9814c1e69d</anchor>
-      <arglist>(hid_t id)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>write_global_vectors</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a7834ca369ef4dd197d0667954854edd0</anchor>
-      <arglist>(hid_t id, struct fclib_global *problem)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>read_global_vectors</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a7c692e0eee1727bb5a3033bd2330d81c</anchor>
-      <arglist>(hid_t id, struct fclib_global *problem)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>write_local_vectors</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a6dcbbbee29d6a0af12fb87d531508a48</anchor>
-      <arglist>(hid_t id, struct fclib_local *problem)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>read_local_vectors</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a8bc238e193fcdf7574221d62af6591c2</anchor>
-      <arglist>(hid_t id, struct fclib_local *problem)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>write_problem_info</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>aca8c24ddc0ea386c97b678b1324ea0d4</anchor>
-      <arglist>(hid_t id, struct fclib_info *info)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static struct fclib_info *</type>
-      <name>read_problem_info</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a027ca7a38adea4ea55cd4ad3af71505d</anchor>
-      <arglist>(hid_t id)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>write_solution</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>aa4bc76f00cee23457c4f29ec53f8ceea</anchor>
-      <arglist>(hid_t id, struct fclib_solution *solution, hsize_t nv, hsize_t nr, hsize_t nl)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>read_solution</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>af66ff03f18b03083ea7ad5a9ee9d2021</anchor>
-      <arglist>(hid_t id, hsize_t nv, hsize_t nr, hsize_t nl, struct fclib_solution *solution)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static int</type>
-      <name>read_nvnunrnl</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a0da0a5e09f832f89656ad0fe8fc7064d</anchor>
-      <arglist>(hid_t file_id, int *nv, int *nr, int *nl)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>delete_matrix_info</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>ac35480502e8612c3717d5fc6279de0c5</anchor>
-      <arglist>(struct fclib_matrix_info *info)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>delete_matrix</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>ab5f8fb6fdbd5d68d93e1b68e8b009581</anchor>
-      <arglist>(struct fclib_matrix *mat)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>delete_info</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a0b6e96725a6f98fdd3b49cdaea3aa38d</anchor>
-      <arglist>(struct fclib_info *info)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>fclib_create_int_attributes_in_info</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a8b3c88579db667d89aa7d7a6c6fd90f4</anchor>
-      <arglist>(const char *path, const char *attr_name, int attr_value)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>fclib_write_global</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>acd5a38f03c621ce4a53eea28ae6d9e2e</anchor>
-      <arglist>(struct fclib_global *problem, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>fclib_write_local</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a5c4c7bb4d98efc388fdf4a7aa009b87a</anchor>
-      <arglist>(struct fclib_local *problem, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>fclib_write_solution</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a6edc26abbeec9f3e9a4fa71e70726988</anchor>
-      <arglist>(struct fclib_solution *solution, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>fclib_write_guesses</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a5100104b958b245b883f5d505651a5c1</anchor>
-      <arglist>(int number_of_guesses, struct fclib_solution *guesses, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>struct fclib_global *</type>
-      <name>fclib_read_global</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a68650a3ef8e5cfca61e10ede3ff59745</anchor>
-      <arglist>(const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>struct fclib_local *</type>
-      <name>fclib_read_local</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a1122778ddd33ab84360ec6da584bff99</anchor>
-      <arglist>(const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>struct fclib_solution *</type>
-      <name>fclib_read_solution</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a038c74114b0d53fd79785d99cd6c42fb</anchor>
-      <arglist>(const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>struct fclib_solution *</type>
-      <name>fclib_read_guesses</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>ad1392d4746f60eb0030d6f9e80846e53</anchor>
-      <arglist>(const char *path, int *number_of_guesses)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>fclib_delete_global</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a14b1c35f51633d79f4ed6a680d21d6b4</anchor>
-      <arglist>(struct fclib_global *problem)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>fclib_delete_local</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a20292c502d574d412fd8b41aad37225b</anchor>
-      <arglist>(struct fclib_local *problem)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>fclib_delete_solutions</name>
-      <anchorfile>fclib_8c.html</anchorfile>
-      <anchor>a4b70826ccf4a67808e1946036ac6d950</anchor>
-      <arglist>(struct fclib_solution *data, int count)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -251,164 +28,264 @@
     <class kind="struct">fclib_global</class>
     <class kind="struct">fclib_local</class>
     <class kind="struct">fclib_solution</class>
-    <member kind="enumeration">
-      <type></type>
-      <name>fclib_merit</name>
+    <member kind="define">
+      <type>#define</type>
+      <name>FCLIB_APICOMPILE</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a8d23c04ffda9ad1393fc7f3793e4a9a1</anchor>
+      <anchor>ada539519ab2c1f2f9acb478ab3aeb23c</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
-      <name>MERIT_1</name>
+    <member kind="define">
+      <type>#define</type>
+      <name>FCLIB_STATIC</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a8d23c04ffda9ad1393fc7f3793e4a9a1ada6eeb669c4207de9ebdbc59ab1107b4</anchor>
+      <anchor>a39884ed51fb89354fd625364cd090da2</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
-      <name>MERIT_2</name>
+    <member kind="define">
+      <type>#define</type>
+      <name>FCLIB_IMPLEMENTATION</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a8d23c04ffda9ad1393fc7f3793e4a9a1a907c2eb86a2fff5e525e93538f27fa3a</anchor>
+      <anchor>ada04b9d5474ea67cc2ae291ce69bf20a</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>H5Gcreate_vers</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>ae8ec3114e7970ceac40260041d66edbb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>H5Gopen_vers</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a76c98e4e3ad7bd3a5a480e59f446d20d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>ASSERT</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>af6a170071ba1da3930abadc6d3f95493</anchor>
+      <arglist>(Test,...)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>IO</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a7e1b7988c998844258179660bb5f8e69</anchor>
+      <arglist>(Call)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MM</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>ae5d192dca25b682622b72b1211df96b7</anchor>
+      <arglist>(Call)</arglist>
     </member>
     <member kind="function">
-      <type>int</type>
+      <type>FCLIB_STATIC int</type>
       <name>fclib_write_global</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>acd5a38f03c621ce4a53eea28ae6d9e2e</anchor>
+      <anchor>a1c391873bdb89a027994aee2bb1a4a96</anchor>
       <arglist>(struct fclib_global *problem, const char *path)</arglist>
     </member>
     <member kind="function">
-      <type>int</type>
+      <type>FCLIB_STATIC int</type>
       <name>fclib_write_local</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a5c4c7bb4d98efc388fdf4a7aa009b87a</anchor>
+      <anchor>af677eb602798365817795e7569920422</anchor>
       <arglist>(struct fclib_local *problem, const char *path)</arglist>
     </member>
     <member kind="function">
-      <type>int</type>
+      <type>FCLIB_STATIC int</type>
       <name>fclib_write_solution</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a6edc26abbeec9f3e9a4fa71e70726988</anchor>
+      <anchor>aa6df56d82f6b9c660549f6a7cd3bedb0</anchor>
       <arglist>(struct fclib_solution *solution, const char *path)</arglist>
     </member>
     <member kind="function">
-      <type>int</type>
+      <type>FCLIB_STATIC int</type>
       <name>fclib_write_guesses</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a5100104b958b245b883f5d505651a5c1</anchor>
+      <anchor>ad46dea243a4495f1ad8a26c7657d3a9c</anchor>
       <arglist>(int number_of_guesses, struct fclib_solution *guesses, const char *path)</arglist>
     </member>
     <member kind="function">
-      <type>struct fclib_global *</type>
+      <type>FCLIB_STATIC struct fclib_global *</type>
       <name>fclib_read_global</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a68650a3ef8e5cfca61e10ede3ff59745</anchor>
+      <anchor>a9f7b9d5cad87df0920516592ee0aae2a</anchor>
       <arglist>(const char *path)</arglist>
     </member>
     <member kind="function">
-      <type>struct fclib_local *</type>
+      <type>FCLIB_STATIC struct fclib_local *</type>
       <name>fclib_read_local</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a1122778ddd33ab84360ec6da584bff99</anchor>
+      <anchor>ac822adc404300eebf5378c643ff2ae08</anchor>
       <arglist>(const char *path)</arglist>
     </member>
     <member kind="function">
-      <type>struct fclib_solution *</type>
+      <type>FCLIB_STATIC struct fclib_solution *</type>
       <name>fclib_read_solution</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a038c74114b0d53fd79785d99cd6c42fb</anchor>
+      <anchor>a912678a831b9839cf78e1d47fbfb7255</anchor>
       <arglist>(const char *path)</arglist>
     </member>
     <member kind="function">
-      <type>struct fclib_solution *</type>
+      <type>FCLIB_STATIC struct fclib_solution *</type>
       <name>fclib_read_guesses</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>ad1392d4746f60eb0030d6f9e80846e53</anchor>
+      <anchor>aadf625dc10b2e3e02015a287d73963b0</anchor>
       <arglist>(const char *path, int *number_of_guesses)</arglist>
     </member>
     <member kind="function">
-      <type>double</type>
-      <name>fclib_merit_global</name>
-      <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a148e6f5a5567fc5f2961d48f0652f1b9</anchor>
-      <arglist>(struct fclib_global *problem, enum fclib_merit merit, struct fclib_solution *solution)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>fclib_merit_local</name>
-      <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a60a8a78d06e2ba1a2dc5bce40d49113e</anchor>
-      <arglist>(struct fclib_local *problem, enum fclib_merit merit, struct fclib_solution *solution)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
+      <type>FCLIB_STATIC void</type>
       <name>fclib_delete_global</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a14b1c35f51633d79f4ed6a680d21d6b4</anchor>
+      <anchor>a341a5ea57977b0d746fb094a6ce871e8</anchor>
       <arglist>(struct fclib_global *problem)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>FCLIB_STATIC void</type>
       <name>fclib_delete_local</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a20292c502d574d412fd8b41aad37225b</anchor>
+      <anchor>a8e8f4b58c9992dccfa27e5550df209aa</anchor>
       <arglist>(struct fclib_local *problem)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>FCLIB_STATIC void</type>
       <name>fclib_delete_solutions</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a4b70826ccf4a67808e1946036ac6d950</anchor>
+      <anchor>a27450e3afac2ee39b4521a27100a15ec</anchor>
       <arglist>(struct fclib_solution *data, int count)</arglist>
     </member>
     <member kind="function">
-      <type>int</type>
+      <type>FCLIB_STATIC int</type>
       <name>fclib_create_int_attributes_in_info</name>
       <anchorfile>fclib_8h.html</anchorfile>
-      <anchor>a8b3c88579db667d89aa7d7a6c6fd90f4</anchor>
+      <anchor>a046fabc2688f6228ddcf861ab3de40be</anchor>
       <arglist>(const char *path, const char *attr_name, int attr_value)</arglist>
     </member>
-  </compound>
-  <compound kind="file">
-    <name>fcmer.c</name>
-    <path>/Users/acary/Work/fclib/src/</path>
-    <filename>fcmer_8c</filename>
-    <includes id="fclib_8h" name="fclib.h" local="yes" imported="no">fclib.h</includes>
-    <includes id="fcint_8h" name="fcint.h" local="yes" imported="no">fcint.h</includes>
-    <member kind="function" static="yes">
-      <type>static double</type>
-      <name>dnrm2</name>
-      <anchorfile>fcmer_8c.html</anchorfile>
-      <anchor>a21b2b1a5cdebb20cb283d5409db7f17b</anchor>
-      <arglist>(double *v, int n)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>projectionOnCone</name>
-      <anchorfile>fcmer_8c.html</anchorfile>
-      <anchor>a54a7859cadadbf77cbe50743347f33c5</anchor>
-      <arglist>(double *r, double mu)</arglist>
+    <member kind="function">
+      <type>FCLIB_STATIC hid_t</type>
+      <name>H5Gmake</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a4af9c6a6525fa117fd4573ca3d6dce2e</anchor>
+      <arglist>(hid_t loc_id, const char *name)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>FrictionContact3D_unitary_compute_and_add_error</name>
-      <anchorfile>fcmer_8c.html</anchorfile>
-      <anchor>afee93cccfbaff1232c6083249e1a5e7e</anchor>
-      <arglist>(double *z, double *w, double mu, double *error)</arglist>
+      <type>FCLIB_STATIC void</type>
+      <name>write_matrix</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a01e38ad037cd4b30eb8d1657a1602200</anchor>
+      <arglist>(hid_t id, struct fclib_matrix *mat)</arglist>
     </member>
     <member kind="function">
-      <type>double</type>
-      <name>fclib_merit_global</name>
-      <anchorfile>fcmer_8c.html</anchorfile>
-      <anchor>a148e6f5a5567fc5f2961d48f0652f1b9</anchor>
-      <arglist>(struct fclib_global *problem, enum fclib_merit merit, struct fclib_solution *solution)</arglist>
+      <type>FCLIB_STATIC struct fclib_matrix *</type>
+      <name>read_matrix</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a5cbb9dcf7a97a711f1f568a2434b1504</anchor>
+      <arglist>(hid_t id)</arglist>
     </member>
     <member kind="function">
-      <type>double</type>
-      <name>fclib_merit_local</name>
-      <anchorfile>fcmer_8c.html</anchorfile>
-      <anchor>a60a8a78d06e2ba1a2dc5bce40d49113e</anchor>
-      <arglist>(struct fclib_local *problem, enum fclib_merit merit, struct fclib_solution *solution)</arglist>
+      <type>FCLIB_STATIC void</type>
+      <name>write_global_vectors</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>aef429cae16687b7bb91a08e5e008b862</anchor>
+      <arglist>(hid_t id, struct fclib_global *problem)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC void</type>
+      <name>read_global_vectors</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>aea9033a9a8e3a46f3e60360b27919e47</anchor>
+      <arglist>(hid_t id, struct fclib_global *problem)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC void</type>
+      <name>write_local_vectors</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a0b5694e85730f32079c9d8b49a38aff6</anchor>
+      <arglist>(hid_t id, struct fclib_local *problem)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC void</type>
+      <name>read_local_vectors</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a5665ba234518352bb97aac03bfe0efef</anchor>
+      <arglist>(hid_t id, struct fclib_local *problem)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC void</type>
+      <name>write_problem_info</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a3da0efccf168aa02bf11dca34c838487</anchor>
+      <arglist>(hid_t id, struct fclib_info *info)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC struct fclib_info *</type>
+      <name>read_problem_info</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>ad90c7b6b28634ad42911fd0b380da541</anchor>
+      <arglist>(hid_t id)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC void</type>
+      <name>write_solution</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a1ef46fed17c8448bf63f11ae6756d0de</anchor>
+      <arglist>(hid_t id, struct fclib_solution *solution, hsize_t nv, hsize_t nr, hsize_t nl)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC void</type>
+      <name>read_solution</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a75c2ead97e9d12f48eaf8b1f3b851738</anchor>
+      <arglist>(hid_t id, hsize_t nv, hsize_t nr, hsize_t nl, struct fclib_solution *solution)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC int</type>
+      <name>read_nvnunrnl</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>ae7cbd3c281953eef55e58f5e84118279</anchor>
+      <arglist>(hid_t file_id, int *nv, int *nr, int *nl)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC void</type>
+      <name>delete_matrix_info</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a404cf56c1179ab7142097022deaec14d</anchor>
+      <arglist>(struct fclib_matrix_info *info)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC void</type>
+      <name>delete_matrix</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>ac5e23d3dda5397f44d42053942eb2cc1</anchor>
+      <arglist>(struct fclib_matrix *mat)</arglist>
+    </member>
+    <member kind="function">
+      <type>FCLIB_STATIC void</type>
+      <name>delete_info</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>ae0e70529fd92b8355068d75ffe7bcbe9</anchor>
+      <arglist>(struct fclib_info *info)</arglist>
+    </member>
+    <member kind="variable">
+      <type>enum FCLIB_APICOMPILE</type>
+      <name>fclib_merit</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>abaf169dc4591afe910aca1cbede2229a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>MERIT_1</name>
+      <anchorfile>fclib_8h.html</anchorfile>
+      <anchor>a61b8c09ca1a9b0c41a2a9e825dfdd6eb</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -416,7 +293,27 @@
     <path>/Users/acary/Work/fclib/src/tests/</path>
     <filename>fctst_8c</filename>
     <includes id="fclib_8h" name="fclib.h" local="yes" imported="no">fclib.h</includes>
-    <includes id="fcint_8h" name="fcint.h" local="yes" imported="no">fcint.h</includes>
+    <member kind="define">
+      <type>#define</type>
+      <name>ASSERT</name>
+      <anchorfile>fctst_8c.html</anchorfile>
+      <anchor>af6a170071ba1da3930abadc6d3f95493</anchor>
+      <arglist>(Test,...)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>IO</name>
+      <anchorfile>fctst_8c.html</anchorfile>
+      <anchor>a7e1b7988c998844258179660bb5f8e69</anchor>
+      <arglist>(Call)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MM</name>
+      <anchorfile>fctst_8c.html</anchorfile>
+      <anchor>ae5d192dca25b682622b72b1211df96b7</anchor>
+      <arglist>(Call)</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static struct fclib_matrix_info *</type>
       <name>matrix_info</name>
@@ -535,7 +432,27 @@
     <path>/Users/acary/Work/fclib/src/tests/</path>
     <filename>fctst__merit_8c</filename>
     <includes id="fclib_8h" name="fclib.h" local="yes" imported="no">fclib.h</includes>
-    <includes id="fcint_8h" name="fcint.h" local="yes" imported="no">fcint.h</includes>
+    <member kind="define">
+      <type>#define</type>
+      <name>ASSERT</name>
+      <anchorfile>fctst__merit_8c.html</anchorfile>
+      <anchor>af6a170071ba1da3930abadc6d3f95493</anchor>
+      <arglist>(Test,...)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>IO</name>
+      <anchorfile>fctst__merit_8c.html</anchorfile>
+      <anchor>a7e1b7988c998844258179660bb5f8e69</anchor>
+      <arglist>(Call)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MM</name>
+      <anchorfile>fctst__merit_8c.html</anchorfile>
+      <anchor>ae5d192dca25b682622b72b1211df96b7</anchor>
+      <arglist>(Call)</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static struct fclib_matrix_info *</type>
       <name>matrix_info</name>
@@ -934,8 +851,6 @@
     <name>download</name>
     <title>Download</title>
     <filename>download</filename>
-    <docanchor file="download" title="How to download sources files of the API?">howtosources</docanchor>
-    <docanchor file="download" title="How to download the collection of problems ?">howtolibrary</docanchor>
   </compound>
   <compound kind="page">
     <name>contact</name>
@@ -953,8 +868,8 @@
     <filename>index</filename>
     <docanchor file="index" title="What is FCLIB ?">whatis</docanchor>
     <docanchor file="index" title="Goals of the project (2011-2017)">goals</docanchor>
-    <docanchor file="index">References</docanchor>
     <docanchor file="index" title="How to download  ?">howtodownload</docanchor>
+    <docanchor file="index">References</docanchor>
     <docanchor file="index" title="What is a Frictional contact problem ?">Wahtis</docanchor>
     <docanchor file="index" title="The local Frictional Contact problem with equality constraints">Localfclib</docanchor>
     <docanchor file="index" title="The Global Frictional Contact problem with equality constraints">globalfclib</docanchor>
